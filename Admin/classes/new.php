@@ -17,13 +17,8 @@
           <form>
             <div class="form-group">
               <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="CID" class="form-control" placeholder="CID" required="required" autofocus="autofocus">
-                    <label for="CID">CID</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
+               
+                <div class="col-md-12">
                   <div class="form-label-group">
                     <input type="text" id="CName" class="form-control" placeholder="CName" required="required">
                     <label for="CName">CName</label>

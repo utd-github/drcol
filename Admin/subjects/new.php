@@ -19,12 +19,6 @@
               <div class="form-row">
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="text" id="SID" class="form-control" placeholder="SID" required="required" autofocus="autofocus">
-                    <label for="SID">SID</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-label-group">
                     <input type="text" id="SName" class="form-control" placeholder="SName" required="required">
                     <label for="SName">SName</label>
                   </div>
@@ -33,16 +27,15 @@
             </div>
                  
            
-                <div class="form-group">
-              <div class="form-label-group">
+            <div class="form-group">
+              <div class="form-row">
+                <div class="col-md-6">
                   <div class="form-label-group">
                       <textarea  id="Description" class="form-control" placeholder="Description" required="required" autofocus="autofocus">
                       </textarea>
-                      
-                
+                  </div>
                   </div>
                 </div>
-               
               </div>
             
           

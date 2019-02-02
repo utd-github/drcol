@@ -121,7 +121,7 @@
             <span>Students</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="students/new.php">New</a>
+            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/students/new.php">New</a>
             <a class="dropdown-item" href="#">All</a>
            
         </li>
@@ -132,7 +132,7 @@
             <span>Classes</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="classes/new.php">New</a>
+            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/classes/new.php">New</a>
             <a class="dropdown-item" href="#">All</a>
               
         </li>
@@ -144,34 +144,36 @@
             <span>Teachers</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="teachers/new.php">New</a>
+            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/teachers/new.php">New</a>
             <a class="dropdown-item" href="#">All</a>
-           
         </li>    
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-book"></i>
             <span>Subjects</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="subjects/new.php">New</a>
+            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/subjects/new.php">New</a>
             <a class="dropdown-item" href="#">All</a>
-            
         </li>
-        
-          
-          
           
         <li class="nav-item">
-          <a class="nav-link" href="Attendence.php">
+          <a class="nav-link" href="http://localhost/xampserver/drcol/admin/Attendence.php">
             <i class="fas fa-calendar-check"></i>
             <span>Attendence</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Exams.php">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-graduation-cap"></i>
-            <span>Exams</span></a>
+            <span>Exams</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/exams/new.php">New</a>
+            <a class="dropdown-item" href="#">All</a>
         </li>
+
         <li class="nav-item">
           <a class="nav-link" href="tables.php">
             <i class="fas fa-fw fa-table"></i>

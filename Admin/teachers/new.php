@@ -17,13 +17,7 @@
           <form>
             <div class="form-group">
               <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="TID" class="form-control" placeholder="TID" required="required" autofocus="autofocus">
-                    <label for="TID">TID</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <div class="form-label-group">
                     <input type="text" id="TName" class="form-control" placeholder="TName" required="required">
                     <label for="TName">TName</label>
