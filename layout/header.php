@@ -15,7 +15,7 @@
   <!-- meta character set -->
   <meta charset="UTF-8" />
   <!-- Site Title -->
-  <title>Eclipse Education</title>
+  <title>Dr Ahmed College</title>
 
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:900|Roboto:400,400i,500,700" rel="stylesheet" />
   <!--
@@ -58,8 +58,8 @@
 								Login
 							</a>
 							<div class="dropdown-menu">
-								<a class="dropdown-item" href="http://localhost/xampserver/drcol/students/">Student</a>
-								<a class="dropdown-item" href="http://localhost/xampserver/drcol/teachers/">Teacher</a>
+								<a class="dropdown-item" href="http://localhost/xampserver/drcol/students/login.php">Student</a>
+								<a class="dropdown-item" href="http://localhost/xampserver/drcol/teachers/login.php">Teacher</a>
 							</div>
 						</li>
           </ul>

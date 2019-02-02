@@ -122,8 +122,8 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <a class="dropdown-item" href="students/new.php">New</a>
-            <a class="dropdown-item" href="#">View</a>
-            <a class="dropdown-item" href="#">Update</a>  
+            <a class="dropdown-item" href="#">All</a>
+           
         </li>
           
                <li class="nav-item dropdown">
@@ -133,8 +133,8 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <a class="dropdown-item" href="classes/new.php">New</a>
-            <a class="dropdown-item" href="#">View</a>
-            <a class="dropdown-item" href="#">Update</a>  
+            <a class="dropdown-item" href="#">All</a>
+              
         </li>
           
 
@@ -145,8 +145,8 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <a class="dropdown-item" href="teachers/new.php">New</a>
-            <a class="dropdown-item" href="#">View</a>
-            <a class="dropdown-item" href="#">Update</a>  
+            <a class="dropdown-item" href="#">All</a>
+           
         </li>    
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -155,8 +155,8 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
             <a class="dropdown-item" href="subjects/new.php">New</a>
-            <a class="dropdown-item" href="#">View</a>
-            <a class="dropdown-item" href="#">Update</a>  
+            <a class="dropdown-item" href="#">All</a>
+            
         </li>
         
           
