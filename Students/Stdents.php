@@ -1,4 +1,5 @@
-<?php include "Layout/Std_layout.php" ?>
+<?php include "Layout/layout.php" ?>
+
 
 
       <div id="content-wrapper">
