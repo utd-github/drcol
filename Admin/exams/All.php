@@ -1,13 +1,75 @@
 <?php include "../Layout/admin_layout.php" ?>
-      <div id="content-wrapper">
+        <div id="content-wrapper">
 
         <div class="container-fluid">
 
           <!-- Breadcrumbs-->
-       
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="#">Exams</a>
+            </li>
+      </ol>
+
+          <!-- Area Chart Example-->
+          
 
           <!-- DataTables Example -->
-          
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              Exam View</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                     <tr>
+                      <th>EID</th>
+                      <th>EName</th>
+                      <th>EType</th>
+                      <th>Description</th>
+                      <th>Date</th>
+                     
+                      
+                    </tr>
+                  </thead>
+                  <tfoot>
+                     <tr>
+                     <th>EID</th>
+                      <th>EName</th>
+                      <th>EType</th>
+                      <th>Description</th>
+                      <th>Date</th>
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                    <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                       <th></th>
+                       
+                    </tr>
+                    <tr>
+                   
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                       <th></th>
+                      <th></th>
+                     
+                    </tr>
+                  
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+
+        </div>
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
@@ -57,6 +119,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="vendor/datatables/jquery.dataTables.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
@@ -65,6 +128,7 @@
 
     <!-- Demo scripts for this page-->
     <script src="js/demo/datatables-demo.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
 
   </body>
 

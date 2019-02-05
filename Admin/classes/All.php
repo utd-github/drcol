@@ -6,70 +6,78 @@
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">New Exam Form</a>
+              <a href="#">Classes</a>
             </li>
-          </ol>
+      </ol>
 
-            <div class="container">
-      <div class="card">
-        <div class="card-header">Exams</div>
-        <div class="card-body">
-          <form>
-            <div class="form-group">
-              <div class="form-row">
-               
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="EName" class="form-control" placeholder="EName" required="required">
-                    <label for="EName">EName</label>
-                  </div>
-                </div>
+          <!-- Area Chart Example-->
+          
 
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="EType" class="form-control" placeholder="EType" required="required">
-                    <label for="EType">EType</label>
-                  </div>
-                </div>
+          <!-- DataTables Example -->
+          <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-table"></i>
+              Class View</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                     <tr>
+                      <th>CID</th>
+                      <th>CName</th>
+                      <th>TID</th>
+                      <th>TName</th>
+                      <th>Semester</th>
+                       <th>SID</th>
+                      <th>SName</th>
+                      <th>Description</th>
+                      
+                    </tr>
+                  </thead>
+                  <tfoot>
+                     <tr>
+                     <th>CID</th>
+                      <th>CName</th>
+                      <th>TID</th>
+                      <th>TName</th>
+                      <th>Semester</th>
+                       <th>SID</th>
+                      <th>SName</th>
+                      <th>Description</th>
+                      
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                    <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                       <th></th>
+                      <th></th>
+                      <th></th>   
+                    </tr>
+                    <tr>
+                    <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                       <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-              
-                <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="Description" class="form-control" placeholder="Description" required="required" autofocus="autofocus">
-                    <label for="Description">Description</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="date" id="Date" class="form-control" placeholder="Date" required="required">
-                    <label for="Date">Date</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-              
-              
-              
-                 
-          
-              <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-3">
-            <a class="btn btn-primary btn-block" href="index.php">Register</a>
-                  </div>
-                  </div>
-              </div>
-              
-          </form>
-          
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+
         </div>
-      </div>
-    </div>
-         
-         
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
