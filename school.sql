@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 02, 2019 at 07:18 AM
+-- Generation Time: Feb 07, 2019 at 06:32 AM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `drcol`
+-- Database: `school`
 --
 
 -- --------------------------------------------------------
@@ -34,6 +34,42 @@ CREATE TABLE IF NOT EXISTS `admin_login` (
   `name` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
   `password` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `assignments`
+--
+
+DROP TABLE IF EXISTS `assignments`;
+CREATE TABLE IF NOT EXISTS `assignments` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `class_id` varchar(250) NOT NULL,
+  `sub_id` varchar(250) NOT NULL,
+  `teacher_id` varchar(250) NOT NULL,
+  `assign_title` varchar(250) NOT NULL,
+  `assign_file` varchar(250) NOT NULL,
+  `assign_description` varchar(250) NOT NULL,
+  `assign_deadline` varchar(250) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `attendence`
+--
+
+DROP TABLE IF EXISTS `attendence`;
+CREATE TABLE IF NOT EXISTS `attendence` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `class_id` varchar(50) NOT NULL,
+  `sub_id` varchar(50) NOT NULL,
+  `std_id` varchar(50) NOT NULL,
+  `date` varchar(60) NOT NULL,
+  `status` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -59,6 +95,40 @@ CREATE TABLE IF NOT EXISTS `class` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `class_schedule`
+--
+
+DROP TABLE IF EXISTS `class_schedule`;
+CREATE TABLE IF NOT EXISTS `class_schedule` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `class_id` varchar(50) NOT NULL,
+  `std_id` varchar(50) NOT NULL,
+  `dayOfweek` varchar(50) NOT NULL,
+  `star_time` varchar(50) NOT NULL,
+  `end_time` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `events`
+--
+
+DROP TABLE IF EXISTS `events`;
+CREATE TABLE IF NOT EXISTS `events` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `event_title` varchar(50) NOT NULL,
+  `event_type` varchar(50) NOT NULL,
+  `event_place` varchar(50) NOT NULL,
+  `event_date` varchar(250) NOT NULL,
+  `even_description` varchar(250) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `exams`
 --
 
@@ -67,9 +137,8 @@ CREATE TABLE IF NOT EXISTS `exams` (
   `exam_id` int(11) NOT NULL AUTO_INCREMENT,
   `exam_name` varchar(50) NOT NULL,
   `exam_type` varchar(50) NOT NULL,
-  `class_id` varchar(50) NOT NULL,
+  `description` varchar(50) NOT NULL,
   `date` varchar(50) NOT NULL,
-  `year` varchar(50) NOT NULL,
   PRIMARY KEY (`exam_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -84,10 +153,28 @@ CREATE TABLE IF NOT EXISTS `exam_marks` (
   `em_id` int(11) NOT NULL AUTO_INCREMENT,
   `em_name` varchar(50) NOT NULL,
   `em_type` varchar(50) NOT NULL,
-  `em_class` varchar(50) NOT NULL,
+  `description` varchar(50) NOT NULL,
   `em_std` varchar(50) NOT NULL,
   `em_date` varchar(50) NOT NULL,
   PRIMARY KEY (`em_id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `messages`
+--
+
+DROP TABLE IF EXISTS `messages`;
+CREATE TABLE IF NOT EXISTS `messages` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `messageid` varchar(50) NOT NULL,
+  `userid` varchar(50) NOT NULL,
+  `fromid` varchar(50) NOT NULL,
+  `told` varchar(500) NOT NULL,
+  `messagetext` text NOT NULL,
+  `datesent` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------

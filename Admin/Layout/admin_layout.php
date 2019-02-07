@@ -156,10 +156,14 @@
             <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/subjects/All.php">All</a>
         </li>
           
-        <li class="nav-item">
-          <a class="nav-link" href="http://localhost/xampserver/drcol/admin/Attendence.php">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fas fa-calendar-check"></i>
-            <span>Attendence</span></a>
+            <span>Attendence</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/Attendence.php">Attendence</a>
+            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/AttendenceS.php">Attendence Statistics</a>
         </li>
 
         <li class="nav-item dropdown">
@@ -173,9 +177,9 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="tables.php">
+          <a class="nav-link" href="schedule.php">
             <i class="fas fa-fw fa-table"></i>
-            <span>Time Tables</span></a>
+            <span>Classes Schedule</span></a>
         </li>
 
       </ul>
