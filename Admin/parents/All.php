@@ -1,71 +1,96 @@
-<?php include "Layout/layout.php" ?>
-
-
-      <div id="content-wrapper">
+<?php include "../Layout/admin_layout.php" ?>
+        <div id="content-wrapper">
 
         <div class="container-fluid">
 
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">Dashboard</a>
+              <a href="#">Students</a>
             </li>
-            <li class="breadcrumb-item active">Time_Tables</li>
-          </ol>
+      </ol>
+
+          <!-- Area Chart Example-->
+          
 
           <!-- DataTables Example -->
           <div class="card mb-3">
             <div class="card-header">
               <i class="fas fa-table"></i>
-              Data Table Example</div>
+              Student View</div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
-                    <tr>
+                     <tr>
+                      <th>SID</th>
                       <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                      <th>Rollno.</th>
+                      <th>PhoneNo.</th>
+                       <th>Age</th>
+                      <th>Email</th>
+                      <th>POB</th>
+                      <th>DOB</th>
+                      <th>Gender</th>
+                      <th>Semester</th>
+                      <th>Year</th> 
+                      <th>PID</th> 
+                      <th>PName</th>  
+                      <th>SubDate</th>
                     </tr>
                   </thead>
                   <tfoot>
-                    <tr>
+                     <tr>
+                      <th>SID</th>
                       <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                      <th>Rollno.</th>
+                      <th>PhoneNo.</th>
+                       <th>Age</th>
+                      <th>Email</th>
+                      <th>POB</th>
+                      <th>DOB</th>
+                      <th>Gender</th>
+                      <th>Semester</th>
+                      <th>Year</th> 
+                      <th>PID</th> 
+                      <th>PName</th>  
+                      <th>SubDate</th>
                     </tr>
                   </tfoot>
                   <tbody>
                     <tr>
-                      <td>Tiger Nixon</td>
-                      <td>System Architect</td>
-                      <td>Edinburgh</td>
-                      <td>61</td>
-                      <td>2011/04/25</td>
-                      <td>$320,800</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>        
                     </tr>
                     <tr>
-                      <td>Garrett Winters</td>
-                      <td>Accountant</td>
-                      <td>Tokyo</td>
-                      <td>63</td>
-                      <td>2011/07/25</td>
-                      <td>$170,750</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                     </tr>
-                    <tr>
-                      <td>Ashton Cox</td>
-                      <td>Junior Technical Author</td>
-                      <td>San Francisco</td>
-                      <td>66</td>
-                      <td>2009/01/12</td>
-                      <td>$86,000</td>
-                    </tr>
+                  
                     </tr>
                   </tbody>
                 </table>
@@ -74,10 +99,6 @@
             <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
           </div>
 
-          <p class="small text-center text-muted my-5">
-            <em>More table examples coming soon...</em>
-          </p>
-
         </div>
         <!-- /.container-fluid -->
 
@@ -85,7 +106,7 @@
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>©Copyright 2019 DDR's | All Rights Reserved </span>
+              <span>©Copyright 2019 DDR's | All Rights Reserved</span>
             </div>
           </div>
         </footer>
@@ -128,6 +149,7 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Page level plugin JavaScript-->
+    <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="vendor/datatables/jquery.dataTables.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
@@ -136,6 +158,7 @@
 
     <!-- Demo scripts for this page-->
     <script src="js/demo/datatables-demo.js"></script>
+    <script src="js/demo/chart-area-demo.js"></script>
 
   </body>
 

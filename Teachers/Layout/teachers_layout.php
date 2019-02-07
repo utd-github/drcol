@@ -76,6 +76,11 @@
           </a>
         </li>
         
+        <li class="nav-item">
+          <a class="nav-link" href="Messages.php">
+            <i class="fas fa-envelope"></i>
+            <span>Messages</span></a>
+        </li>
   
         <li class="nav-item">
           <a class="nav-link" href="stdents.php">

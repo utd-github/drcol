@@ -76,6 +76,11 @@
           </a>
         </li>
         
+        <li class="nav-item">
+          <a class="nav-link" href="Messages.php">
+            <i class="fas fa-envelope"></i>
+            <span>Messages</span></a>
+        </li>
   
         <li class="nav-item">
           <a class="nav-link" href="stdents.php">
@@ -113,9 +118,9 @@
      
         
         <li class="nav-item">
-          <a class="nav-link" href="Time_tables.php">
+          <a class="nav-link" href="schedule.php">
             <i class="fas fa-fw fa-table"></i>
-            <span>Time Tables</span></a>
+            <span>classes Schedule</span></a>
         </li>
 
       </ul>
