@@ -6,78 +6,22 @@
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">New Students Form</a>
+              <a href="#">New Parent Form</a>
             </li>
           </ol>
 
             <div class="container">
       <div class="card">
-        <div class="card-header">Students</div>
+        <div class="card-header">Parents</div>
         <div class="card-body">
           <form>
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="FullName" class="form-control" placeholder="FullName" required="required" autofocus="autofocus">
-                    <label for="FullName">FullName</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="RollNo." class="form-control" placeholder="RollNo." required="required">
-                    <label for="RollNo.">RollNo.</label>
-                  </div>
-                </div>
-              </div>
-            </div>
+        
               
                 <div class="form-group">
               <div class="form-row">
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="text" id="PhoneNo." class="form-control" placeholder="PhoneNo." required="required" autofocus="autofocus">
-                    <label for="PhoneNo.">PhoneNo.</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="Age" class="form-control" placeholder="Age" required="required">
-                    <label for="Age">Age</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-              
-               <div class="form-group">
-              <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required">
-                <label for="inputEmail">Email address</label>
-              </div>
-            </div>
-              
-                 <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="date" id="POB" class="form-control" placeholder="POB" required="required" autofocus="autofocus">
-                    <label for="POB">POB</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="date" id="DOB" class="form-control" placeholder="DOB" required="required">
-                    <label for="DOB">DOB</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-              
-                   <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="PID" class="form-control" placeholder="PID" required="required" autofocus="autofocus">
+                    <input type="text" id="PID" class="form-control" placeholder="PID." required="required" autofocus="autofocus">
                     <label for="PID">PID</label>
                   </div>
                 </div>
@@ -90,36 +34,51 @@
               </div>
             </div>
               
-                  <div class="form-group">
+                <div class="form-group">
               <div class="form-row">
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="text" id="Semester" class="form-control" placeholder="Semester" required="required" autofocus="autofocus">
-                    <label for="Semester">Semester</label>
+                    <input type="text" id="PType" class="form-control" placeholder="PType" required="required" autofocus="autofocus">
+                    <label for="PType">Ptype</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="date" id="Year" class="form-control" placeholder="Year" required="required">
-                    <label for="Year">Year</label>
+                    <input type="text" id="Qualification" class="form-control" placeholder="Qualification" required="required">
+                    <label for="Qualification">Qualification</label>
                   </div>
                 </div>
               </div>
             </div>
-           
-                <div class="form-group">
-              <div class="form-label-group">
+              
+              
+              
+                   <div class="form-group">
+              <div class="form-row">
+                <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="date" id="Sub_date" class="form-control" placeholder="Sub_date" required="required" autofocus="autofocus">
-                    <label for="Sub_date">Submission_Date</label>
+                    <input type="date" id="JYear" class="form-control" placeholder="JYear" required="required" autofocus="autofocus">
+                    <label for="JYear">JYear</label>
                   </div>
                 </div>
-               
+                <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="date" id="HDate" class="form-control" placeholder="HDate" required="required">
+                    <label for="HDate">HDate</label>
+                  </div>
+                </div>
               </div>
+            </div>
+              
+                  
+            <div class="form-label-group">
+                    <input type="text" id="Description" class="form-control" placeholder="Description" required="required" autofocus="autofocus">
+                    <label for="Description">Description</label>
+                  </div>
+                </div>
             
           
               <div class="form-group">
-              <div class="form-row">
                 <div class="col-md-3">
             <a class="btn btn-primary btn-block" href="index.php">Register</a>
                   </div>

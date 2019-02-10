@@ -7,12 +7,47 @@
         <div class="container-fluid">
 
           <!-- Breadcrumbs-->
+         
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">Dashboard</a>
+              <a href="#">Messages</a>
             </li>
-            <li class="breadcrumb-item active">Messages</li>
           </ol>
+
+            <div class="container">
+      <div class="card">
+        <div class="card-header">Send Messages</div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <div class="form-row">
+               
+                <div class="col-md-12">
+                  <div class="form-label-group">
+                    <input type="text" id="Send Message to (Username)*" class="form-control" placeholder="Send Message to (Username)*" required="required">
+                    <label for="Send Message to (Username)*">Send Message to (Username)</label>
+                    </div>
+                </div>
+              </div>
+            </div>
+                    <div class="form-label-group">
+                    <input type="text" id="Messages" class="form-control" placeholder="Messages" required="required" autofocus="autofocus">
+                    <label for="Messages">Messages</label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                <div class="col-md-3">
+            <a class="btn btn-primary btn-block" href="Messages.php">Send Message</a>
+                  </div>
+                  </div>
+              
+                  
+            </form>
+          
+          </div>
+        </div>
+      </div>
 
           <!-- DataTables Example -->
          

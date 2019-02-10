@@ -81,27 +81,7 @@
             <i class="fas fa-envelope"></i>
             <span>Messages</span></a>
         </li>
-  
-        <li class="nav-item">
-          <a class="nav-link" href="stdents.php">
-            <i class="	fas fa-users"></i>
-            <span>Students</span></a>
-        </li>
-       
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="classes.php">
-            <i class="fa fa-sitemap"></i>
-            <span>Classes</span></a>
-        </li>
-      
-      
-        
-        <li class="nav-item">
-          <a class="nav-link" href="Subjects.php">
-            <i class="fa fa-book"></i>
-            <span>Subjects</span></a>
-        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="Attendence.php">
             <i class="fa fa-calendar-check"></i>
@@ -110,12 +90,31 @@
     
       
         <li class="nav-item">
-          <a class="nav-link" href="Annoucements.php">
+          <a class="nav-link" href="Events.php">
             <i class="fa fa-bullhorn"></i>
-            <span>Annoucements</span></a>
+            <span>Events</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Assignments.php">
+            <i class="fa fa-file-pdf"></i>
+            <span>Assignments</span></a>
+        </li>
+  
+        <li class="nav-item">
+          <a class="nav-link" href="Exams.php">
+            <i class="fa fa-graduation-cap"></i>
+            <span>Exams</span></a>
+        </li>
+       
         </li>
     
-     
+      
+    
+        <li class="nav-item">
+          <a class="nav-link" href="Payments.php">
+            <i class="fa fa-credit-card "></i>
+            <span>Payments</span></a>
+        </li>
         
         <li class="nav-item">
           <a class="nav-link" href="schedule.php">

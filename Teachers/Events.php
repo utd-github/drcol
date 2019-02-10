@@ -1,6 +1,5 @@
 <?php include "layout/teachers_layout.php" ?>
 
-
       <div id="content-wrapper">
 
         <div class="container-fluid">
@@ -8,13 +7,68 @@
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">Dashboard</a>
+              <a href="#">Events</a>
             </li>
-            <li class="breadcrumb-item active">Classes</li>
+            
           </ol>
 
           <!-- DataTables Example -->
-         
+          <div class="card mb-3">
+            <div class="card-header">
+             
+            Events List</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                     <tr>
+                     <th>ID</th>
+                      <th>Event Name/Place</th>
+                      <th>Event Description</th>
+                      <th>For</th>
+                      <th>Date</th>
+                    </tr>
+
+                  </thead>
+
+                  <tfoot>
+                     <tr>
+                     <th>ID</th>
+                      <th>Event Name/Place</th>
+                      <th>Event Description</th>
+                      <th>For</th>
+                      <th>Date</th>
+                     
+                      
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                    <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+
+                    </tr>
+                    <tr>
+                    <th></th>
+                    <th></th>                    
+                      <th></th>
+                       <th></th>
+                      <th></th>
+                      
+                    </tr>
+                  
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+
+        </div>
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->

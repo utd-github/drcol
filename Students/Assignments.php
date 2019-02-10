@@ -9,13 +9,67 @@
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">Dashboard</a>
+              <a href="#">Assignments</a>
             </li>
-            <li class="breadcrumb-item active">Classes</li>
           </ol>
 
           <!-- DataTables Example -->
-         
+          <div class="card mb-3">
+            <div class="card-header">
+             
+            List Assignment </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                     <tr>
+                      <th>ID</th>
+                      <th>Assignment Title</th>
+                      <th>Assignment Description</th>
+                      <th>Assignment Deadline</th>
+                      <th>Operations</th>
+                    </tr>
+
+                  </thead>
+
+                  <tfoot>
+                     <tr>
+                     <th>ID</th>
+                      <th>Assignment Title</th>
+                      <th>Assignment Description</th>
+                      <th>Assignment Deadline</th>
+                      <th>Operations</th>
+                     
+                      
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                    <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+
+                    </tr>
+                    <tr>
+                    <th></th>
+                    <th></th>                    
+                      <th></th>
+                       <th></th>
+                      <th></th>
+                      
+                    </tr>
+                  
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+
+        </div>
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->

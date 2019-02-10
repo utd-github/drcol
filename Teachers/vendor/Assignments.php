@@ -7,9 +7,8 @@
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">Dashboard</a>
+              <a href="#">Assignments</a>
             </li>
-            <li class="breadcrumb-item active">Annoucement</li>
           </ol>
 
           <!-- DataTables Example -->
@@ -20,7 +19,7 @@
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>©Copyright 2019 DDR's | All Rights Reserved </span>
+              <span>©Copyright 2019 DDR's | All Rights Reserved</span>
             </div>
           </div>
         </footer>
@@ -54,4 +53,5 @@
         </div>
       </div>
     </div>
+
     <?php include "layout/footer_layout.php" ?>

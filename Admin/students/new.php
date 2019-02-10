@@ -119,7 +119,6 @@
             
           
               <div class="form-group">
-              <div class="form-row">
                 <div class="col-md-3">
             <a class="btn btn-primary btn-block" href="index.php">Register</a>
                   </div>

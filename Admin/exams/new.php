@@ -34,10 +34,7 @@
               </div>
             </div>
               
-                <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-label-group">
+                                 <div class="form-label-group">
                     <input type="text" id="Description" class="form-control" placeholder="Description" required="required" autofocus="autofocus">
                     <label for="Description">Description</label>
                   </div>
@@ -56,7 +53,7 @@
                  
           
               <div class="form-group">
-              <div class="form-row">
+              
                 <div class="col-md-3">
             <a class="btn btn-primary btn-block" href="index.php">Register</a>
                   </div>

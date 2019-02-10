@@ -1,7 +1,4 @@
-<?php include "Layout/layout.php" ?>
-
-
-
+<?php include "layout/teachers_layout.php" ?>
 
       <div id="content-wrapper">
 
@@ -10,33 +7,36 @@
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">Attendance Statistics</a>
+              <a href="#">Assignments</a>
             </li>
-            
           </ol>
 
           <!-- DataTables Example -->
           <div class="card mb-3">
             <div class="card-header">
              
-            Attendance Statistics </div>
+            List Assignment </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                      <tr>
-                      <th>Date</th>
-                      <th>Subject</th>
-                      <th>Attendance</th>
-                     
-                      
+                      <th>ID</th>
+                      <th>Assignment Title</th>
+                      <th>Assignment Description</th>
+                      <th>Assignment Deadline</th>
+                      <th>Operations</th>
                     </tr>
+
                   </thead>
+
                   <tfoot>
                      <tr>
-                     <th>Date</th>
-                      <th>Subject</th>
-                      <th>Attendance</th>
+                     <th>ID</th>
+                      <th>Assignment Title</th>
+                      <th>Assignment Description</th>
+                      <th>Assignment Deadline</th>
+                      <th>Operations</th>
                      
                       
                     </tr>
@@ -46,10 +46,13 @@
                     <th></th>
                       <th></th>
                       <th></th>
-                     
+                      <th></th>
+                      <th></th>
+
                     </tr>
                     <tr>
-                    
+                    <th></th>
+                    <th></th>                    
                       <th></th>
                        <th></th>
                       <th></th>
@@ -105,24 +108,4 @@
         </div>
       </div>
     </div>
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Page level plugin JavaScript-->
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin.min.js"></script>
-
-    <!-- Demo scripts for this page-->
-    <script src="js/demo/datatables-demo.js"></script>
-
-  </body>
-
-</html>
+    <?php include "layout/footer_layout.php" ?>

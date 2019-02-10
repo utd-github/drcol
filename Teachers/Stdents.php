@@ -8,13 +8,71 @@
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">Dashboard</a>
+              <a href="Stdents.php">Students</a>
             </li>
-            <li class="breadcrumb-item active">Students</li>
           </ol>
 
           <!-- DataTables Example -->
-          
+          <div class="card mb-3">
+            <div class="card-header">
+             
+            Exam List</div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                     <tr>
+                     <th>ID</th>
+                      <th>Full Name</th>
+                      <th>Username</th>
+                      <th>Email address</th>
+                      <th>Class</th>
+                      <th>Operations</th>
+                    </tr>
+
+                  </thead>
+
+                  <tfoot>
+                     <tr>
+                     <th>ID</th>
+                      <th>Full Name</th>
+                      <th>Username</th>
+                      <th>Email address</th>
+                      <th>Class</th>
+                      <th>Operations</th>
+                     
+                      
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                    <th></th>
+                    <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+
+                    </tr>
+                    <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>                    
+                      <th></th>
+                       <th></th>
+                      <th></th>
+                      
+                    </tr>
+                  
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+
+        </div>
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
