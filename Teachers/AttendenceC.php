@@ -12,65 +12,71 @@
 
             <div class="container">
       <div class="card">
-        <div class="card-header">Select attendance info to add</div>
+        <div class="card-header">Control attendance :</div>
         <div class="card-body">
-          <form>
 
-          <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-12">
-                  <div class="form-label-group">
-                    <input type="text" id="Class" class="form-control" placeholder="Class" required="required" autofocus="autofocus">
-                    <label for="Class">Class</label>
-                  </div>
-                </div>
-                </div>
-                </div>
+        <div class="card mb-3">
+            <div class="card-header">
+             
+            List Assignment </div>
+            <div class="card-body">
+              <div class="table-responsive">
+                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                  <thead>
+                     <tr>
+                     <th>#</th>
+                      <th>Student Name</th>
+                      <th>Attendance</th>
+                     
+                    </tr>
 
+                  </thead>
+
+                  <tfoot>
+                     <tr>
+                     <th>#</th>
+                      <th>Student Name</th>
+                      <th>Attendance</th>
+                    
+                    </tr>
+                  </tfoot>
+                  <tbody>
+                    <tr>
+                    <th></th>
+                      <th></th>
+                      <th></th>
+                      
+
+                    </tr>
+                    <tr>
+                    <th></th>
+                    <th></th>                    
+                      <th></th>
+                    </tr>
+                  
+                    </tr>
+                  </tbody>
+                </table>
                 <div class="form-group">
               <div class="form-row">
-                <div class="col-md-12">
-                  <div class="form-label-group">
-                    <input type="text" id="Subject" class="form-control" placeholder="Subject" required="required">
-                    <label for="Subject">Subject</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-12">
-                  <div class="form-label-group">
-                    <input type="date" id="Date" class="form-control" placeholder="Date" required="required">
-                    <label for="Date">Date</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-           
-
-           
-           
-          
-              <div class="form-group">
-              <div class="form-row">
                 <div class="col-md-3">
-            <a class="btn btn-primary btn-block" href="attendenceC.php">Control attendance</a>
+            <a class="btn btn-primary btn-block" href="index.php">Save attendance</a>
                   </div>
                   </div>
               </div>
-              
-          </form>
-          
-        </div>
-      </div>
-    </div>
-          <!-- DataTables Example -->
-          
-        <!-- /.container-fluid -->
 
-        <!-- Sticky Footer -->
+              </div>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div>
+
+        </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
+
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
@@ -109,5 +115,4 @@
       </div>
     </div>
 
-    <!-- Bootstrap core JavaScript-->
     <?php include "layout/footer_layout.php" ?>
