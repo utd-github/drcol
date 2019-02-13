@@ -50,8 +50,6 @@
           <ul class="navbar-nav">
             <li><a href="index.php">Home</a></li>
             <li><a href="about.php">About</a></li>
-            <li><a href="courses.php">Courses</a></li>
-            <li><a href="contacts.php">Contacts</a></li>
             <li><a href="contacts.php">Contacts</a></li>
             <li class="dropdown">
 							<a class="dropdown-toggle" href="#" data-toggle="dropdown">

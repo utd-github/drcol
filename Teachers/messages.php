@@ -28,9 +28,10 @@
                 </div>
               </div>
             </div>
-                    <div class="form-label-group">
-                    <input type="text" id="Messages" class="form-control" placeholder="Messages" required="required" autofocus="autofocus">
-                    <label for="Messages">Messages</label>
+
+            <div class="form-label-group">
+                    <textarea type="text" id="Messages" class="form-control" placeholder="Messages" required="required" autofocus="autofocus">
+                    </textarea>
                   </div>
                 </div>
 
