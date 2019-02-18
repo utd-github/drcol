@@ -21,7 +21,7 @@
                 <div class="col-md-12">
                   <div class="form-label-group">
                     <input type="text" id="CName" class="form-control" placeholder="CName" required="required">
-                    <label for="CName">CName</label>
+                    <label for="CName">Class Name</label>
                   </div>
                 </div>
               </div>
@@ -29,16 +29,11 @@
               
                 <div class="form-group">
               <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="TID." class="form-control" placeholder="TID." required="required" autofocus="autofocus">
-                    <label for="TID">TID</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
+                
+                <div class="col-md-12">
                   <div class="form-label-group">
                     <input type="text" id="TName" class="form-control" placeholder="TName" required="required">
-                    <label for="TName">TName</label>
+                    <label for="TName">Teacher Name</label>
                   </div>
                 </div>
               </div>
@@ -53,24 +48,19 @@
               
                    <div class="form-group">
               <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="SID" class="form-control" placeholder="SID" required="required" autofocus="autofocus">
-                    <label for="SID">SID</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
+                
+                <div class="col-md-12">
                   <div class="form-label-group">
                     <input type="text" id="SName" class="form-control" placeholder="SName" required="required">
-                    <label for="SName">SName</label>
+                    <label for="SName">Subject Name</label>
                   </div>
                 </div>
               </div>
             </div>
               
             <div class="form-label-group">
-                    <input type="text" id="Description" class="form-control" placeholder="Description" required="required" autofocus="autofocus">
-                    <label for="Description">Description</label>
+                    <textarea type="text" id="Messages" class="form-control" placeholder="Description" required="required" autofocus="autofocus">
+                    </textarea>
                   </div>
                 </div>
           

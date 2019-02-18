@@ -27,16 +27,16 @@
                       <th>Name</th>
                       <th>Rollno.</th>
                       <th>PhoneNo.</th>
-                       <th>Age</th>
+                  
                       <th>Email</th>
-                      <th>POB</th>
-                      <th>DOB</th>
+                      <th>Place Of Birth</th>
+                      <th>Date Of Birth</th>
                       <th>Gender</th>
                       <th>Semester</th>
                       <th>Year</th> 
-                      <th>PID</th> 
-                      <th>PName</th>  
-                      <th>SubDate</th>
+                      <th>P Name</th> 
+                      <th>P Type</th>  
+                      <th>Submission Date</th>
                     </tr>
                   </thead>
                   <tfoot>
@@ -45,21 +45,21 @@
                       <th>Name</th>
                       <th>Rollno.</th>
                       <th>PhoneNo.</th>
-                       <th>Age</th>
+                     
                       <th>Email</th>
-                      <th>POB</th>
-                      <th>DOB</th>
+                      <th>Place Of Birth</th>
+                      <th>Date Of Birth</th>
                       <th>Gender</th>
                       <th>Semester</th>
                       <th>Year</th> 
-                      <th>PID</th> 
-                      <th>PName</th>  
-                      <th>SubDate</th>
+                      <th>P Name</th> 
+                      <th>P Type</th>  
+                      <th>Submission Date</th>
                     </tr>
                   </tfoot>
                   <tbody>
                     <tr>
-                      <td></td>
+                     
                       <td></td>
                       <td></td>
                       <td></td>
@@ -75,7 +75,7 @@
                       <td></td>        
                     </tr>
                     <tr>
-                      <td></td>
+                     
                       <td></td>
                       <td></td>
                       <td></td>

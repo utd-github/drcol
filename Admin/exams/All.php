@@ -23,9 +23,9 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                      <tr>
-                      <th>EID</th>
-                      <th>EName</th>
-                      <th>EType</th>
+                     
+                      <th>Exam Name</th>
+                      <th>Exam Type</th>
                       <th>Description</th>
                       <th>Date</th>
                      
@@ -34,9 +34,9 @@
                   </thead>
                   <tfoot>
                      <tr>
-                     <th>EID</th>
-                      <th>EName</th>
-                      <th>EType</th>
+                    
+                      <th>Exam Name</th>
+                      <th>Exam Type</th>
                       <th>Description</th>
                       <th>Date</th>
                     </tr>

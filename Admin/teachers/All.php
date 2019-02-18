@@ -27,7 +27,7 @@
                       <th>TName</th>
                       <th>Email</th>
                       <th>Phone</th>
-                      <th>Class_Name</th>
+                      <th>Subject_Name</th>
                        <th>Joined_Date</th>
                       <th>Hire_Date</th>
                       <th>Description</th>
@@ -40,7 +40,7 @@
                       <th>TName</th>
                       <th>Email</th>
                       <th>Phone</th>
-                      <th>Class_Name</th>
+                      <th>Subject_Name</th>
                        <th>Joined_Date</th>
                       <th>Hire_Date</th>
                       <th>Description</th>

@@ -20,7 +20,7 @@
                 <div class="col-md-12">
                   <div class="form-label-group">
                     <input type="text" id="TName" class="form-control" placeholder="TName" required="required">
-                    <label for="TName">TName</label>
+                    <label for="TName">Teacher Name</label>
                   </div>
                 </div>
               </div>
@@ -48,7 +48,7 @@
                 <div class="col-md-6">
                   <div class="form-label-group">
                     <input type="text" id="CName" class="form-control" placeholder="CName" required="required" autofocus="autofocus">
-                    <label for="CName">CName</label>
+                    <label for="CName">Subject Name</label>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -67,13 +67,13 @@
                 <div class="col-md-6">
                   <div class="form-label-group">
                     <input type="date" id="JYear" class="form-control" placeholder="JYear" required="required" autofocus="autofocus">
-                    <label for="JYear">JYear</label>
+                    <label for="JYear">Joined Year</label>
                   </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6"> 
                   <div class="form-label-group">
                     <input type="date" id="HDate" class="form-control" placeholder="HDate" required="required">
-                    <label for="HDate">HDate</label>
+                    <label for="HDate">Hire Date</label>
                   </div>
                 </div>
               </div>
@@ -81,8 +81,8 @@
               
                   
             <div class="form-label-group">
-                    <input type="text" id="Description" class="form-control" placeholder="Description" required="required" autofocus="autofocus">
-                    <label for="Description">Description</label>
+                    <textarea type="text" id="Messages" class="form-control" placeholder="Description" required="required" autofocus="autofocus">
+                    </textarea>
                   </div>
                 </div>
             

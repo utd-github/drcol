@@ -21,13 +21,13 @@
                 <div class="col-md-6">
                   <div class="form-label-group">
                     <input type="text" id="Class" class="form-control" placeholder="Class" required="required" autofocus="autofocus">
-                    <label for="Class">Class*</label>
+                    <label for="Class">Class</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-label-group">
                     <input type="text" id="Subject" class="form-control" placeholder="Subject" required="required">
-                    <label for="Subject">Subject*</label>
+                    <label for="Subject">Subject</label>
                   </div>
                 </div>
               </div>
@@ -38,7 +38,7 @@
                 <div class="col-md-12">
                   <div class="form-label-group">
                     <input type="date" id="Date" class="form-control" placeholder="Date" required="required">
-                    <label for="Date">Date*</label>
+                    <label for="Date">Date</label>
                   </div>
                 </div>
               </div>

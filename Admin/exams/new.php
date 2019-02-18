@@ -3,8 +3,8 @@
 
         <div class="container-fluid">
 
-          <!-- Breadcrumbs-->
-          <ol class="breadcrumb">
+         <!-- Breadcrumbs-->
+         <ol class="breadcrumb">
             <li class="breadcrumb-item">
               <a href="#">New Exam Form</a>
             </li>
@@ -20,40 +20,40 @@
                
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="text" id="EName" class="form-control" placeholder="EName" required="required">
-                    <label for="EName">EName</label>
+                    <input type="text" id="Exam Name" class="form-control" placeholder="Exam Name" required="required">
+                    <label for="Exam Name">Exam Name</label>
                   </div>
                 </div>
 
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="text" id="EType" class="form-control" placeholder="EType" required="required">
-                    <label for="EType">EType</label>
+                    <input type="text" id="Exam Type" class="form-control" placeholder="Exam Type" required="required">
+                    <label for="Exam Type">Exam Type</label>
                   </div>
                 </div>
               </div>
             </div>
               
-                                 <div class="form-label-group">
-                    <input type="text" id="Description" class="form-control" placeholder="Description" required="required" autofocus="autofocus">
-                    <label for="Description">Description</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
+                <div class="form-group">
+              <div class="form-row">
+                
+                <div class="col-md-12">
                   <div class="form-label-group">
-                    <input type="date" id="Date" class="form-control" placeholder="Date" required="required">
-                    <label for="Date">Date</label>
+                    <input type="date" id="date" class="form-control" placeholder="date" required="required">
+                    <label for="date">Date</label>
                   </div>
                 </div>
               </div>
             </div>
+          
               
-              
-              
-                 
+            <div class="form-label-group">
+                    <textarea type="text" id="Messages" class="form-control" placeholder="Description" required="required" autofocus="autofocus">
+                    </textarea>
+                  </div>
+                </div>
           
               <div class="form-group">
-              
                 <div class="col-md-3">
             <a class="btn btn-primary btn-block" href="index.php">Register</a>
                   </div>
@@ -65,12 +65,16 @@
         </div>
       </div>
     </div>
-         
-         
-        <!-- /.container-fluid -->
 
-        <!-- Sticky Footer -->
-        <footer class="sticky-footer">
+
+
+
+
+
+
+
+<!-- Sticky Footer -->
+<footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
               <span>©Copyright 2019 DDR's | All Rights Reserved</span>

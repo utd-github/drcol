@@ -20,13 +20,13 @@
                 <div class="col-md-6">
                   <div class="form-label-group">
                     <input type="text" id="FullName" class="form-control" placeholder="FullName" required="required" autofocus="autofocus">
-                    <label for="FullName">FullName</label>
+                    <label for="FullName">Full Name</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-label-group">
                     <input type="text" id="RollNo." class="form-control" placeholder="RollNo." required="required">
-                    <label for="RollNo.">RollNo.</label>
+                    <label for="RollNo.">Roll No.</label>
                   </div>
                 </div>
               </div>
@@ -34,18 +34,13 @@
               
                 <div class="form-group">
               <div class="form-row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <div class="form-label-group">
                     <input type="text" id="PhoneNo." class="form-control" placeholder="PhoneNo." required="required" autofocus="autofocus">
-                    <label for="PhoneNo.">PhoneNo.</label>
+                    <label for="PhoneNo.">Phone No.</label>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="Age" class="form-control" placeholder="Age" required="required">
-                    <label for="Age">Age</label>
-                  </div>
-                </div>
+                
               </div>
             </div>
               
@@ -60,14 +55,14 @@
               <div class="form-row">
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="date" id="POB" class="form-control" placeholder="POB" required="required" autofocus="autofocus">
-                    <label for="POB">POB</label>
+                    <input type="text" id="POB" class="form-control" placeholder="POB" required="required" autofocus="autofocus">
+                    <label for="POB">Place Of Birth</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-label-group">
                     <input type="date" id="DOB" class="form-control" placeholder="DOB" required="required">
-                    <label for="DOB">DOB</label>
+                    <label for="DOB">Date Of Birth</label>
                   </div>
                 </div>
               </div>
@@ -78,13 +73,13 @@
                 <div class="col-md-6">
                   <div class="form-label-group">
                     <input type="text" id="PID" class="form-control" placeholder="PID" required="required" autofocus="autofocus">
-                    <label for="PID">PID</label>
+                    <label for="PID">parent Name</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-label-group">
                     <input type="text" id="PName" class="form-control" placeholder="PName" required="required">
-                    <label for="PName">PName</label>
+                    <label for="PName">Parent Type</label>
                   </div>
                 </div>
               </div>
@@ -92,18 +87,13 @@
               
                   <div class="form-group">
               <div class="form-row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                   <div class="form-label-group">
                     <input type="text" id="Semester" class="form-control" placeholder="Semester" required="required" autofocus="autofocus">
                     <label for="Semester">Semester</label>
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="date" id="Year" class="form-control" placeholder="Year" required="required">
-                    <label for="Year">Year</label>
-                  </div>
-                </div>
+                
               </div>
             </div>
            
@@ -111,7 +101,7 @@
               <div class="form-label-group">
                   <div class="form-label-group">
                     <input type="date" id="Sub_date" class="form-control" placeholder="Sub_date" required="required" autofocus="autofocus">
-                    <label for="Sub_date">Submission_Date</label>
+                    <label for="Sub_date">Submission Date</label>
                   </div>
                 </div>
                

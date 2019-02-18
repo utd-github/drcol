@@ -23,8 +23,8 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                      <tr>
-                      <th>Sub_ID</th>
-                      <th>Sub_Name</th>
+                      <th>Subject_ID</th>
+                      <th>Subject_Name</th>
                       <th>Description</th>
                      
                       
@@ -32,8 +32,8 @@
                   </thead>
                   <tfoot>
                      <tr>
-                     <th>Sub_ID</th>
-                      <th>Sub_Name</th>
+                     <th>Subject_ID</th>
+                      <th>Subject_Name</th>
                       <th>Description</th>
                     
                       
