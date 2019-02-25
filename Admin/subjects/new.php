@@ -36,7 +36,7 @@
           
               <div class="form-group">
                 <div class="col-md-3">
-            <a class="btn btn-primary btn-block" href="index.php">Register</a>
+            <a class="btn btn-primary btn-block" href="..//index.php">Register</a>
                   </div>
                   </div>
               </div>

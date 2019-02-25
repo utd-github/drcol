@@ -76,33 +76,14 @@
           </a>
         </li>
         
-        <li class="nav-item">
-          <a class="nav-link" href="Messages.php">
-            <i class="fas fa-envelope"></i>
-            <span>Messages</span></a>
-        </li>
-         
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-calendar-check"></i>
-            <span>Attendence</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="Attendence.php">Attendence</a>
-            <a class="dropdown-item" href="AttendenceS.php">Attendence Statistics</a>
-        </li>
+ 
         
         <li class="nav-item">
           <a class="nav-link" href="Assignments.php">
             <i class="fa fa-file-pdf"></i>
             <span>Assignments</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="stdents.php">
-            <i class="	fas fa-users"></i>
-            <span>Students</span></a>
-        </li>
-        </li>
+        
         
         <li class="nav-item">
           <a class="nav-link" href="Events.php">
@@ -110,13 +91,7 @@
             <span>Events</span></a>
         </li>
     
-     
-        <li class="nav-item">
-          <a class="nav-link" href="Exams">
-            <i class="fa fa-graduation-cap"></i>
-            <span>Exams</span></a>
-        </li>
-        
+    
         <li class="nav-item">
           <a class="nav-link" href="Schedule.php">
             <i class="fas fa-fw fa-table"></i>

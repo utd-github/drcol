@@ -1,4 +1,4 @@
-<?php include "Layout/admin_layout.php" ?>
+<?php include "./Layout/admin_layout.php" ?>
 
       <div id="content-wrapper">
 

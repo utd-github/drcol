@@ -73,12 +73,11 @@
             <span>Dashboard</span>
           </a>
         </li>
-        
-                
+       
         <li class="nav-item">
-          <a class="nav-link" href="http://localhost/xampserver/drcol/admin/Messages.php">
-            <i class="fas fa-envelope"></i>
-            <span>Messages</span></a>
+          <a class="nav-link" href="http://localhost/xampserver/drcol/admin/Assignments.php">
+            <i class="fa fa-file-pdf"></i>
+            <span>Assignments</span></a>
         </li>
 
           <li class="nav-item dropdown">
@@ -87,8 +86,8 @@
             <span>Students</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/students/new.php">New</a>
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/students/All.php">All</a>
+            <a class="dropdown-item" href="#">New</a>
+            <a class="dropdown-item" href="#">All</a>
            
         </li>
           
@@ -98,8 +97,8 @@
             <span>Classes</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/classes/new.php">New</a>
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/classes/All.php">All</a>
+            <a class="dropdown-item" href="#">New</a>
+            <a class="dropdown-item" href="#">All</a>
               
         </li>
           
@@ -110,8 +109,8 @@
             <span>Teachers</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/teachers/new.php">New</a>
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/teachers/All.php">All</a>
+            <a class="dropdown-item" href="#">New</a>
+            <a class="dropdown-item" href="#">All</a>
         </li>    
 
         <li class="nav-item dropdown">
@@ -120,99 +119,39 @@
             <span>Subjects</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/subjects/new.php">New</a>
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/subjects/All.php">All</a>
+            <a class="dropdown-item" href="#">New</a>
+            <a class="dropdown-item" href="#">All</a>
         </li>
-          
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-calendar-check"></i>
-            <span>Attendence</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/Attendence.php">Attendence</a>
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/AttendenceS.php">Attendence Statistics</a>
-        </li>
-
+       
 
         <li class="nav-item">
-          <a class="nav-link" href="Annoucements.php">
+          <a class="nav-link" href="http://localhost/xampserver/drcol/admin/events.php">
             <i class="fa fa-bullhorn"></i>
             <span>Annoucements</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Assignments.php">
-            <i class="fa fa-file-pdf"></i>
-            <span>Assignments</span></a>
-        </li>
-
+    
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-graduation-cap"></i>
             <span>Exams</span>
           </a>
+          
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/exams/new.php">New</a>
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/exams/All.php">All</a>
+            <a class="dropdown-item" href="#">New</a>
+            <a class="dropdown-item" href="#">All</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="schedule.php">
+          <a class="nav-link" href="http://localhost/xampserver/drcol/admin/schedule.php">
             <i class="fas fa-fw fa-table"></i>
             <span>Classes Schedule</span></a>
         </li>
 
-
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-users"></i>
-            <span>Parents</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/Admin/parents">New</a>
-            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/parents/All.php">All</a>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Management </span></a>
         </li>
-
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fa fa-credit-card"></i>
-            <span>Payments</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <h6 class="dropdown-header">InCome:</h6>
-            <a class="dropdown-item" href="#">Student fee</a>
-            <a class="dropdown-item" href="#">Copy Fee</a>
-            <a class="dropdown-item" href="#">Registration Fee</a>
-            <a class="dropdown-item" href="#">ID_Card Fee</a>
-
-            <div class="dropdown-divider"></div>
-          
-          <h6 class="dropdown-header">OutCome:</h6>
-          <div>
-            <a class="dropdown-item" href="#">Electricity fee</a>
-            <a class="dropdown-item" href="#">Fuel_Car fee</a>
-            <a class="dropdown-item" href="#">Internet fee</a>
-            <a class="dropdown-item" href="#">Rent fee</a>
-            <a class="dropdown-item" href="#">Salary fee</a>
-            <a class="dropdown-item" href="#">Stationary fee</a>
-          </div>
-        </li>
-    
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>System management</span>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <h6 class="dropdown-header">Login Screens:</h6>
-            <a class="dropdown-item" href="login.php">Login</a>
-            <a class="dropdown-item" href="register.php">Register</a>
-            <a class="dropdown-item" href="forgot-password.php">Forgot Password</a>
-            <div class="dropdown-divider"></div>
-          </div>
-        </li>
-
 
       </ul>
 

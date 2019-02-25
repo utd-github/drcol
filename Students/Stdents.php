@@ -9,8 +9,9 @@
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">Payments</a>
+              <a href="#">Dashboard</a>
             </li>
+            <li class="breadcrumb-item active">Students</li>
           </ol>
 
           <!-- DataTables Example -->

@@ -1,66 +1,11 @@
-<?php include "Layout/admin_layout.php" ?>
+<?php include "../Layout/admin_layout.php" ?>
       <div id="content-wrapper">
 
         <div class="container-fluid">
 
           <!-- Breadcrumbs-->
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="#">Attendance</a>
-            </li>
-          </ol>
+       
 
-            <div class="container">
-      <div class="card">
-        <div class="card-header">Select attendance info to add</div>
-        <div class="card-body">
-          <form>
-
-          <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="Class" class="form-control" placeholder="Class" required="required" autofocus="autofocus">
-                    <label for="Class">Class</label>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-label-group">
-                    <input type="text" id="Subject" class="form-control" placeholder="Subject" required="required">
-                    <label for="Subject">Subject</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-12">
-                  <div class="form-label-group">
-                    <input type="date" id="Date" class="form-control" placeholder="Date" required="required">
-                    <label for="Date">Date</label>
-                  </div>
-                </div>
-              </div>
-            </div>
-           
-
-           
-           
-          
-              <div class="form-group">
-              <div class="form-row">
-                <div class="col-md-3">
-            <a class="btn btn-primary btn-block" href="attendenceS.php">Control attendance</a>
-                  </div>
-                  </div>
-              </div>
-              
-          </form>
-          
-        </div>
-      </div>
-    </div>
           <!-- DataTables Example -->
           
         <!-- /.container-fluid -->

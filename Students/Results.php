@@ -1,4 +1,7 @@
-<?php include "layout/teachers_layout.php" ?>
+<?php include "Layout/layout.php" ?>
+
+
+ 
       <div id="content-wrapper">
 
         <div class="container-fluid">
@@ -6,24 +9,20 @@
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">Attendance Statistics</a>
+              <a href="#">Dashboard</a>
             </li>
+            <li class="breadcrumb-item active">Results</li>
           </ol>
 
-            <div class="container">
-      <div class="card">
-        <div class="card-header">Attendance Statistics :</div>
-        <div class="card-body">
+          <!-- DataTables Example -->
+          
+        <!-- /.container-fluid -->
 
-        </div>
-        </div>
-        </div>
-        </div>
-
+        <!-- Sticky Footer -->
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>©Copyright 2019 DDR's | All Rights Reserved</span>
+              <span>©Copyright 2019 DDR's | All Rights Reserved </span>
             </div>
           </div>
         </footer>
@@ -58,4 +57,23 @@
       </div>
     </div>
 
-    <?php include "layout/footer_layout.php" ?>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Page level plugin JavaScript-->
+    <script src="vendor/datatables/jquery.dataTables.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin.min.js"></script>
+
+    <!-- Demo scripts for this page-->
+    <script src="js/demo/datatables-demo.js"></script>
+
+  </body>
+
+</html>

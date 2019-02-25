@@ -1,64 +1,25 @@
-<?php include "Layout/layout.php" ?>
-
-
+<?php include "Layout/admin_layout.php" ?>
 
       <div id="content-wrapper">
 
         <div class="container-fluid">
 
           <!-- Breadcrumbs-->
-         
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">Messages</a>
+              <a href="#">Annoucements</a>
             </li>
           </ol>
 
-            <div class="container">
-      <div class="card">
-        <div class="card-header">Send Messages</div>
-        <div class="card-body">
-          <form>
-            <div class="form-group">
-              <div class="form-row">
-               
-                <div class="col-md-12">
-                  <div class="form-label-group">
-                    <input type="text" id="Send Message to (Username)*" class="form-control" placeholder="Send Message to (Username)*" required="required">
-                    <label for="Send Message to (Username)*">Send Message to (Username)</label>
-                    </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-label-group">
-                    <textarea type="text" id="Messages" class="form-control" placeholder="Messages" required="required" autofocus="autofocus">
-                    </textarea>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                <div class="col-md-3">
-            <a class="btn btn-primary btn-block" href="Messages.php">Send Message</a>
-                  </div>
-                  </div>
-              
-                  
-            </form>
-          
-          </div>
-        </div>
-      </div>
-
           <!-- DataTables Example -->
-         
+          
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
         <footer class="sticky-footer">
           <div class="container my-auto">
             <div class="copyright text-center my-auto">
-              <span>©Copyright 2019 DDR's | All Rights Reserved </span>
+              <span>©Copyright 2019 DDR's | All Rights Reserved</span>
             </div>
           </div>
         </footer>
