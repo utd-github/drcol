@@ -5,12 +5,7 @@
         <div class="container-fluid">
 
           <!-- Breadcrumbs-->
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="#">Events</a>
-            </li>
-            
-          </ol>
+         
 
           <!-- DataTables Example -->
           <div class="card mb-3">

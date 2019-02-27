@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 07, 2019 at 02:56 PM
+-- Generation Time: Feb 27, 2019 at 11:30 AM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -53,23 +53,6 @@ CREATE TABLE IF NOT EXISTS `assignments` (
   `assign_file` varchar(250) NOT NULL,
   `assign_description` varchar(250) NOT NULL,
   `assign_deadline` varchar(250) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `attendence`
---
-
-DROP TABLE IF EXISTS `attendence`;
-CREATE TABLE IF NOT EXISTS `attendence` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `class_id` varchar(50) NOT NULL,
-  `sub_id` varchar(50) NOT NULL,
-  `std_id` varchar(50) NOT NULL,
-  `date` varchar(60) NOT NULL,
-  `status` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -162,40 +145,6 @@ CREATE TABLE IF NOT EXISTS `exam_marks` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `messages`
---
-
-DROP TABLE IF EXISTS `messages`;
-CREATE TABLE IF NOT EXISTS `messages` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `messageid` varchar(50) NOT NULL,
-  `userid` varchar(50) NOT NULL,
-  `fromid` varchar(50) NOT NULL,
-  `told` varchar(500) NOT NULL,
-  `messagetext` text NOT NULL,
-  `datesent` varchar(50) NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `parent`
---
-
-DROP TABLE IF EXISTS `parent`;
-CREATE TABLE IF NOT EXISTS `parent` (
-  `parent_id` int(11) NOT NULL AUTO_INCREMENT,
-  `p_name` varchar(50) NOT NULL,
-  `p_type` varchar(50) NOT NULL,
-  `p_email` varchar(50) NOT NULL,
-  `p_phone` varchar(50) NOT NULL,
-  PRIMARY KEY (`parent_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `student`
 --
 
@@ -261,7 +210,7 @@ CREATE TABLE IF NOT EXISTS `teacher` (
   `email` varchar(50) NOT NULL,
   `phone` varchar(50) NOT NULL,
   `joined_year` varchar(50) NOT NULL,
-  `class_name` varchar(50) NOT NULL,
+  `sub_name` varchar(50) NOT NULL,
   `hire_date` varchar(50) NOT NULL,
   `description` varchar(100) NOT NULL,
   PRIMARY KEY (`t_id`)

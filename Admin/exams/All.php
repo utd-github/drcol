@@ -4,11 +4,7 @@
         <div class="container-fluid">
 
           <!-- Breadcrumbs-->
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item">
-              <a href="#">Exams</a>
-            </li>
-      </ol>
+         
 
           <!-- Area Chart Example-->
           
