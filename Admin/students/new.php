@@ -21,8 +21,8 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="text" id="RollNo." class="form-control" placeholder="RollNo." required="required">
-                    <label for="RollNo.">Roll No.</label>
+                    <input type="text" id="RollNo" class="form-control" placeholder="RollNo" required="required">
+                    <label for="RollNo">Roll No</label>
                   </div>
                 </div>
               </div>
@@ -32,8 +32,8 @@
               <div class="form-row">
                 <div class="col-md-12">
                   <div class="form-label-group">
-                    <input type="text" id="PhoneNo." class="form-control" placeholder="PhoneNo." required="required" autofocus="autofocus">
-                    <label for="PhoneNo.">Phone No.</label>
+                    <input type="text" id="PhoneNo" class="form-control" placeholder="PhoneNo" required="required" autofocus="autofocus">
+                    <label for="PhoneNo">Phone No</label>
                   </div>
                 </div>
                 
