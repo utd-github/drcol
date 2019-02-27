@@ -119,7 +119,7 @@
             <span>Subjects</span>
           </a>
           <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-            <a class="dropdown-item" href="#">New</a>
+            <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/subjects/new.php">New</a>
             <a class="dropdown-item" href="#">All</a>
         </li>
        
