@@ -59,7 +59,7 @@
             </div>
               
             <div class="form-label-group">
-                    <textarea type="text" id="Messages" class="form-control" placeholder="Description" required="required" autofocus="autofocus">
+                    <textarea type="text" id="Messages" class="form-control" placeholder="Description" required="required" >
                     </textarea>
                   </div>
                 </div>
