@@ -107,13 +107,12 @@
                
               </div>
             
-          
               <div class="form-group">
-                <div class="col-md-3">
-            <a class="btn btn-primary btn-block" href="..//index.php">Register</a>
-                  </div>
-                  </div>
-              </div>
+                            <label for="description">Description</label>
+                            <textarea class="form-control" id="description" rows="3"></textarea>
+                        </div>
+
+                        <a class="btn btn-primary" href="">Register</a>
               
           </form>
           
