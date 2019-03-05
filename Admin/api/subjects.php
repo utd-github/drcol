@@ -4,16 +4,16 @@ if (isset($_GET["c"])) {
 
     switch ($c) {
         case 'c':
-            createStudent();
+            createSubjects();
             break;
         case 'r':
-            readStudents();
+            readSubjects();
             break;
         case 'u':
-            updateStudent();
+            updateSubjects();
             break;
         case 'd':
-            deleteStudent();
+            deleteSubjects();
             break;
         default:
             echo "Invalid Choice!";
@@ -24,34 +24,37 @@ if (isset($_GET["c"])) {
     echo "You need to choose the operation";
 }
 
-// Create new Student
+// Create new Subjects
 function createSubjects()
 {
-
     require_once "dbconfig.php";
-
     if ($conn == null) {
         die("Conn is empty");
     }
 
-    $sql = "INSERT INTO `subjects`( `sub_name`, `sub_description`, )
-    VALUES (?,?)";
+    if (isset($_POST["name"]) && isset($_POST["des"])) {
+        $sub_name = $_POST["name"];
+        $sub_description = $_POST["des"];
 
-    $statement = mysqli_prepare($conn, $sql);
+        $stmts = $conn->prepare("INSERT INTO `subjects`( `sub_name`, `sub_description`)
+                    VALUES (?,?)");
 
-    mysqli_stmt_bind_param($statement, "ss",
-        $sub_name,
-        $sub_description
-    );
+        $stmts->bind_param("ss", $sub_name, $sub_description);
+        $res = $stmts->execute(); //get result
+        $stmts->close();
 
-    $sub_name = $_POST[""];
-    $sub_description = $_POST[""];
-
-    mysqli_stmt_execute($statement);
-    echo 0;
+        $user_id = mysqli_insert_id($conn);
+        if ($user_id > 0) {
+            echo 1;
+        } else {
+            echo 0;
+        }
+    } else {
+        echo "Empty post params!";
+    }
 }
 
-function readStudents()
+function readSubjects()
 {
     require_once "dbconfig.php";
 
@@ -78,8 +81,8 @@ function readStudents()
     $conn->close();
 }
 
-// update student
-function updateStudent()
+// update Subjects
+function updateSubjects()
 {
     require_once "dbconfig.php";
 
@@ -87,8 +90,8 @@ function updateStudent()
         die("Conn is empty");
     }
 }
-// delete student
-function deleteStudent()
+// delete Subjects
+function deleteSubjects()
 {
     require_once "dbconfig.php";
 
