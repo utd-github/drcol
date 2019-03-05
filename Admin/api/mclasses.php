@@ -1,8 +1,8 @@
 <?php
-include "dbconfig.php";
 
 if (isset($_GET["c"])) {
-    switch ($choice) {
+    $c = $_GET["c"];
+    switch ($c) {
         case 'c':
             createStudent();
             break;
@@ -27,30 +27,33 @@ if (isset($_GET["c"])) {
 // Create new Student
 function createSubjects()
 {
+    require_once "dbconfig.php";
 
+    if ($conn == null) {
+        die("Conn is empty");
+    }
     $sql = "INSERT INTO `class`( `class_name`, `teacher_id`, `teacher_name`, `std_id`, `std_name`, `semester`, `description`)
     VALUES (?,?,?,?,?,?,?)";
 
     $statement = mysqli_prepare($conn, $sql);
 
     mysqli_stmt_bind_param($statement, "sssssss",
-    $class_name	,
-    $teacher_id,
-    $teacher_name	,
-    $std_id	,
-    $std_name,
-    $semester ,
-    $description 
+        $class_name,
+        $teacher_id,
+        $teacher_name,
+        $std_id,
+        $std_name,
+        $semester,
+        $description
     );
 
-    $class_name	= $_POST[""];
-    $teacher_id= $_POST[""];
-    $teacher_name	= $_POST[""];
-    $std_id	= $_POST[""];
-    $std_name = $_POST[""];	
-    $semester = $_POST[""];	
-    $description = $_POST[""];	
-   
+    $class_name = $_POST[""];
+    $teacher_id = $_POST[""];
+    $teacher_name = $_POST[""];
+    $std_id = $_POST[""];
+    $std_name = $_POST[""];
+    $semester = $_POST[""];
+    $description = $_POST[""];
 
     mysqli_stmt_execute($statement);
     echo 0;
@@ -58,6 +61,11 @@ function createSubjects()
 
 function readStudents()
 {
+    require_once "dbconfig.php";
+
+    if ($conn == null) {
+        die("Conn is empty");
+    }
     $sql = "Select * from class";
     //Query Call
     $res = $conn->query($sql);
@@ -79,7 +87,19 @@ function readStudents()
 
 // update student
 function updateStudent()
-{}
+{
+    require_once "dbconfig.php";
+
+    if ($conn == null) {
+        die("Conn is empty");
+    }
+}
 // delete student
 function deleteStudent()
-{}
+{
+    require_once "dbconfig.php";
+
+    if ($conn == null) {
+        die("Conn is empty");
+    }
+}

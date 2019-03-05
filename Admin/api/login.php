@@ -1,6 +1,10 @@
 <?php
-include_once "connection.php";
 
+require_once "dbconfig.php";
+
+if ($conn == null) {
+    die("Conn is empty");
+}
 define('id', 'id');
 define('name', 'name');
 define('sem', 'sem');

@@ -1,8 +1,9 @@
 <?php
-include "dbconfig.php";
+ob_start();
 
 if (isset($_GET["c"])) {
-    switch ($choice) {
+    $c = $_GET["c"];
+    switch ($c) {
         case 'c':
             createStudent();
             break;
@@ -27,7 +28,11 @@ if (isset($_GET["c"])) {
 // Create new Student
 function createStudent()
 {
+    require_once "dbconfig.php";
 
+    if ($conn == null) {
+        die("Conn is empty");
+    }
     $sql = "INSERT INTO `student`( `std_name`, `std_rollno`, `std_phone`, `std_age`, `std_email`, `pob`, `dob`, `gender`, `semester`, `year`, `p_name`, `p_id`, `sub_date`)
     VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)";
 
@@ -70,12 +75,16 @@ function createStudent()
 // Read from students
 function readStudents()
 {
+    require_once "dbconfig.php";
+
+    if ($conn == null) {
+        die("Conn is empty");
+    }
     $sql = "Select * from student";
     //Query Call
     $res = $conn->query($sql);
     //Check if Result is empty
     if ($res->num_rows > 0) {
-
         //loop to print the data
         while ($row = $res->fetch_assoc()) {
             $array[] = $row;
@@ -91,7 +100,19 @@ function readStudents()
 
 // update student
 function updateStudent()
-{}
+{
+    require_once "dbconfig.php";
+
+    if ($conn == null) {
+        die("Conn is empty");
+    }
+}
 // delete student
 function deleteStudent()
-{}
+{
+    require_once "dbconfig.php";
+
+    if ($conn == null) {
+        die("Conn is empty");
+    }
+}

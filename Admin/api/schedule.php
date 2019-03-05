@@ -1,8 +1,8 @@
 <?php
-include "dbconfig.php";
 
 if (isset($_GET["c"])) {
-    switch ($choice) {
+    $c = $_GET["c"];
+    switch ($c) {
         case 'c':
             createStudent();
             break;
@@ -28,6 +28,12 @@ if (isset($_GET["c"])) {
 function createSchedule()
 {
 
+    require_once "dbconfig.php";
+
+    if ($conn == null) {
+        die("Conn is empty");
+    }
+
     $sql = "INSERT INTO `class_schedule`(`class_id`, `std_id`, `dayOfweek`, `star_time`, `end_time`)
     VALUES (?,?,?,?,?)";
 
@@ -40,7 +46,6 @@ function createSchedule()
 
     $sub_name = $_POST[""];
     $sub_description = $_POST[""];
-   
 
     mysqli_stmt_execute($statement);
     echo 0;
@@ -48,6 +53,12 @@ function createSchedule()
 
 function readStudents()
 {
+    require_once "dbconfig.php";
+
+    if ($conn == null) {
+        die("Conn is empty");
+    }
+
     $sql = "Select * from class_schedule";
     //Query Call
     $res = $conn->query($sql);
@@ -69,7 +80,19 @@ function readStudents()
 
 // update student
 function updateStudent()
-{}
+{
+    require_once "dbconfig.php";
+
+    if ($conn == null) {
+        die("Conn is empty");
+    }
+}
 // delete student
 function deleteStudent()
-{}
+{
+    require_once "dbconfig.php";
+
+    if ($conn == null) {
+        die("Conn is empty");
+    }
+}
