@@ -1,19 +1,19 @@
 <?php
-
 if (isset($_GET["c"])) {
     $c = $_GET["c"];
+
     switch ($c) {
         case 'c':
-            createStudent();
+            createclass_schedule();
             break;
         case 'r':
-            readStudents();
+            readclass_schedule();
             break;
         case 'u':
-            updateStudent();
+            updateclass_schedule();
             break;
         case 'd':
-            deleteStudent();
+            deleteclass_schedule();
             break;
         default:
             echo "Invalid Choice!";
@@ -24,34 +24,42 @@ if (isset($_GET["c"])) {
     echo "You need to choose the operation";
 }
 
-// Create new Student
-function createSchedule()
+// Create new class_schedule
+function createclass_schedule()
 {
-
     require_once "dbconfig.php";
-
     if ($conn == null) {
         die("Conn is empty");
     }
 
-    $sql = "INSERT INTO `class_schedule`(`class_id`, `std_id`, `dayOfweek`, `star_time`, `end_time`)
-    VALUES (?,?,?,?,?)";
+    if (isset($_POST["class_id"])&& isset($_POST["std_id"])  && isset($_POST["dayOfweek"]) && isset($_POST["star_time"]) && isset($_POST["end_time"])  )
+  
+     {
+            $class_id = $_POST["class_id"];
+            $std_id = $_POST["std_id"];
+            $dayOfweek = $_POST["dayOfweek"];
+            $star_time = $_POST["star_time"];
+            $end_time = $_POST["end_time"];
 
-    $statement = mysqli_prepare($conn, $sql);
+            $stmts = $conn->prepare("INSERT INTO `class_schedule`( `class_id`, `std_id`, `dayOfweek`, `star_time`,`end_time`)
+        VALUES (?,?,?,?,?)");
+    
+            $stmts->bind_param( "sssss", $class_id, $std_id,$dayOfweek, $star_time, $end_time);
+            $res = $stmts->execute(); //get result
+            $stmts->close();
+    
+            $user_id = mysqli_insert_id($conn);
+            if ($user_id > 0) {
+                echo 1;
+            } else {
+                echo 0;
+            }
+        } else {
+            echo "Empty post params!";
+        }
+    }
 
-    mysqli_stmt_bind_param($statement, "sssss",
-        $sub_name,
-        $sub_description
-    );
-
-    $sub_name = $_POST[""];
-    $sub_description = $_POST[""];
-
-    mysqli_stmt_execute($statement);
-    echo 0;
-}
-
-function readStudents()
+    function readclass_schedule()
 {
     require_once "dbconfig.php";
 
@@ -78,8 +86,8 @@ function readStudents()
     $conn->close();
 }
 
-// update student
-function updateStudent()
+// update class_schedule
+function updateclass_schedule()
 {
     require_once "dbconfig.php";
 
@@ -87,8 +95,8 @@ function updateStudent()
         die("Conn is empty");
     }
 }
-// delete student
-function deleteStudent()
+// delete class
+function deleteclass_schedule()
 {
     require_once "dbconfig.php";
 
@@ -96,3 +104,4 @@ function deleteStudent()
         die("Conn is empty");
     }
 }
+
