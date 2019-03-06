@@ -4,16 +4,16 @@ if (isset($_GET["c"])) {
 
     switch ($c) {
         case 'c':
-            createassignments();
+            createAssignments();
             break;
         case 'r':
-            readassignments();
+            readAssignments();
             break;
         case 'u':
-            updateassignments();
+            updateAssignments();
             break;
         case 'd':
-            deleteassignments();
+            deleteAssignments();
             break;
         default:
             echo "Invalid Choice!";
@@ -24,45 +24,43 @@ if (isset($_GET["c"])) {
     echo "You need to choose the operation";
 }
 
-// Create new assignments
-function createassignments()
+// Create new Assignments
+function createAssignments()
 {
     require_once "dbconfig.php";
     if ($conn == null) {
         die("Conn is empty");
     }
 
-    if (isset($_POST["class_id"])&& isset($_POST["sub_id"])  && isset($_POST["teacher_id"]) && isset($_POST["assign_title"]) && isset($_POST["assign_file"])
-&& isset($_POST["assign_description"])&& isset($_POST["assign_deadline"])  )
-  
-     {
-            $class_id = $_POST["class_id"];
-            $sub_id = $_POST["sub_id"];
-            $teacher_id= $_POST["teacher_id"];
-            $assign_title = $_POST["assign_title"];
-            $assign_file = $_POST["assign_file"];
-           $assign_description = $_POST["assign_description"];
-           $assign_deadline = $_POST["assign_deadline"];
+    if (isset($_POST["class_id"]) && isset($_POST["sub_id"]) && isset($_POST["teacher_id"]) && isset($_POST["assign_title"]) && isset($_POST["assign_file"])
+        && isset($_POST["assign_description"]) && isset($_POST["assign_deadline"])) {
+        $class_id = $_POST["class_id"];
+        $sub_id = $_POST["sub_id"];
+        $teacher_id = $_POST["teacher_id"];
+        $assign_title = $_POST["assign_title"];
+        $assign_file = $_POST["assign_file"];
+        $assign_description = $_POST["assign_description"];
+        $assign_deadline = $_POST["assign_deadline"];
 
-           $stmts = $conn->prepare("INSERT INTO `assignments`( `class_id`, `sub_id`, `teacher_id`, `assign_title`,`assign_file`,`assign_description`,`assign_deadline`)
+        $stmts = $conn->prepare("INSERT INTO `assignments`( `class_id`, `sub_id`, `teacher_id`, `assign_title`,`assign_file`,`assign_description`,`assign_deadline`)
            VALUES (?,?,?,?,?,?,?)");
-       
-               $stmts->bind_param( "sssssss", $class_id, $sub_id,$teacher_id, $assign_title, $assign_file,$assign_description,$assign_daedline);
-               $res = $stmts->execute(); //get result
-               $stmts->close();
-       
-               $user_id = mysqli_insert_id($conn);
-               if ($user_id > 0) {
-                   echo 1;
-               } else {
-                   echo 0;
-               }
-           } else {
-               echo "Empty post params!";
-           }
-       }
 
-       function readassignments()
+        $stmts->bind_param("sssssss", $class_id, $sub_id, $teacher_id, $assign_title, $assign_file, $assign_description, $assign_daedline);
+        $res = $stmts->execute(); //get result
+        $stmts->close();
+
+        $user_id = mysqli_insert_id($conn);
+        if ($user_id > 0) {
+            echo 1;
+        } else {
+            echo 0;
+        }
+    } else {
+        echo "Empty post params!";
+    }
+}
+
+function readAssignments()
 {
     require_once "dbconfig.php";
 
@@ -89,8 +87,8 @@ function createassignments()
     $conn->close();
 }
 
-// update assignments
-function updateassignments()
+// update Assignments
+function updateAssignments()
 {
     require_once "dbconfig.php";
 
@@ -98,8 +96,8 @@ function updateassignments()
         die("Conn is empty");
     }
 }
-// delete assignments
-function deleteassignments()
+// delete Assignments
+function deleteAssignments()
 {
     require_once "dbconfig.php";
 
@@ -107,6 +105,3 @@ function deleteassignments()
         die("Conn is empty");
     }
 }
-
-
-

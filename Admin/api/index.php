@@ -7,9 +7,9 @@
  <title>DR AHMED COLLEGE - API</title>
 </head>
 <body>
-  <h6>API Directory</h6>
-
-  <a href="http://localhost/xampserver/drcol/admi/api/student">Get Students</a>
-
+  <h6>SMS API</h6>
+  <p>
+    Welcome to sms api
+  </p>
 </body>
 </html>
