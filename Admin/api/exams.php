@@ -4,16 +4,16 @@ if (isset($_GET["c"])) {
 
     switch ($c) {
         case 'c':
-            createexam();
+            createexams();
             break;
         case 'r':
-            readexam();
+            readexams();
             break;
         case 'u':
-            updateexam();
+            updateexams();
             break;
         case 'd':
-            deleteexam();
+            deleteexams();
             break;
         default:
             echo "Invalid Choice!";

@@ -74,7 +74,7 @@ function readStudents()
         die("Conn is empty");
     }
 
-    $sql = "Select * from Students";
+    $sql = "Select * from Student";
     //Query Call
     $res = $conn->query($sql);
     //Check if Result is empty
