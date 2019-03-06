@@ -87,7 +87,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                     <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/students/new.php">New</a>
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/students/all.php">All</a>
+                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/students/">All</a>
 
             </li>
 
@@ -98,7 +98,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                     <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/classes/new.php">New</a>
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/classes/all.php">All</a>
+                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/classes/">All</a>
 
             </li>
 
@@ -110,7 +110,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                     <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/teachers/new.php">New</a>
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/teachers/all.php">All</a>
+                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/teachers/">All</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -120,7 +120,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                     <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/subjects/new.php">New</a>
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/subjects/all.php">All</a>
+                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/subjects/">All</a>
             </li>
 
 
@@ -138,7 +138,7 @@
 
                 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                     <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/exams/new.php">New</a>
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/exams/all.php">All</a>
+                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/exams/">All</a>
             </li>
 
             <li class="nav-item">
