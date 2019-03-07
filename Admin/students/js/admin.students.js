@@ -13,23 +13,26 @@ function getStudents() {
 
 function populateStudents(students) {
   let studentstr = "";
-
   students.map((student, i) => {
-   studentstr += `
+    studentstr += `
     <tr>
      <td>${i + 1}</td>
-     <td>${student.f_name}</td>
      <td>${student.std_rollno}</td>
-     <td>${student.std_age}</td>
+     <td>${student.f_name}</td>
+     <td>${student.std_phone}</td>
      <td>${student.std_email}</td>
-     <td>${student.pob}</td>
-     <td>${student.dob}</td>
-     <td>${student.gender}</td>
-     <td>${student.semester}</td>
-     <td>${student.std_age}</td>
-     <td>${student.p_name}</td>
-     <td>${student.p_id}</td>
-     <td>${student.sub_date}</td>
+     <td>${student.year}</td>
+     <td>
+          <button type="button" class="btn btn-primary">
+            <i class="fa fa-eye"></i>
+          </button>
+          <button type="button" class="btn btn-success">
+            <i class="fa fa-edit"></i>
+          </button>
+          <button type="button" class="btn btn-danger">
+            <i class="fa fa-trash"></i>
+          </button>
+     </td>
     </tr>
    `;
   });

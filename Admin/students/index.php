@@ -8,10 +8,12 @@
                 <thead class="thead-dark">
                     <tr>
                         <th>#</th>
+                        <th>Roll NO.</th>
                         <th>Full Name</th>
+                        <th>Phone Number</th>
                         <th>Email</th>
-                        <th>Class</th>
-                        <th>Operations</th>
+                        <th>Year</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody id="studentstable">
@@ -68,7 +70,7 @@
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin.min.js"></script>
 
-<script src="js/admin.studens.js"></script>
+<script src="js/admin.students.js"></script>
 
 </body>
 
