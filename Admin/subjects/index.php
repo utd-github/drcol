@@ -6,8 +6,9 @@
                 <thead class="thead-dark">
                     <tr>
                         <th>#</th>
-                        <th>Subject_Name</th>
+                        <th>Subject Name</th>
                         <th>Description</th>
+                        <th>Operations</th>
                     </tr>
                 </thead>
                 <tbody id="subjectstable">
