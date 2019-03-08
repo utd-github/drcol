@@ -98,7 +98,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                     <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/mclasses/new.php">New</a>
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/mclasses/">All</a>
+                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/classes/">All</a>
 
             </li>
 

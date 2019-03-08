@@ -38,7 +38,5 @@ function populateMclass(mclasses) {
    `;
   });
 
-  $("#clasestable").html(mclassestr);
+  $("#classestable").html(mclassestr);
 }
-
-console.log("Hello")

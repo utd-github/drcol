@@ -18,7 +18,7 @@ function populateStudents(students) {
     <tr>
      <td>${i + 1}</td>
      <td>${student.std_rollno}</td>
-     <td>${student.f_name}</td>
+     <td>${student.std_name}</td>
      <td>${student.std_phone}</td>
      <td>${student.std_email}</td>
      <td>${student.year}</td>
