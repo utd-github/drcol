@@ -8,7 +8,7 @@
                         <th>#</th>
                         <th>Subject Name</th>
                         <th>Description</th>
-                        <th>Operations</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody id="subjectstable">

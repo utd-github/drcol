@@ -10,7 +10,7 @@
                         <th>Teacher Name</th>
                         <th>Qualification</th>
                         <th>Email</th>                  
-                        <th>Operations</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody id="teacherstable">
@@ -67,7 +67,7 @@
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin.min.js"></script>
 
-<script src="js/admin.teachers.js"></script>
+<script src="js/admin.teacher.js"></script>
 
 </body>
 

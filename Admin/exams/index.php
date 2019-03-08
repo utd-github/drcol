@@ -10,7 +10,8 @@
                         <th>Exam Name</th>
                         <th>Exam Description</th>
                         <th>Exam Date</th>
-                        <th>Operations</th>
+                        <th>Actions</th>
+                        
 
                     </tr>
                 </thead>
@@ -68,7 +69,7 @@
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin.min.js"></script>
 
-<script src="js/admin.exams.js"></script>
+<script src="js/admin.exam.js"></script>
 
 </body>
 

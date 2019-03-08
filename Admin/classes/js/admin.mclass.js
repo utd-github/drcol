@@ -1,26 +1,27 @@
-// Get Subjects
-getSubjects();
-// get Subjects function
-function getSubjects() {
-  fetch("http://localhost/xampserver/drcol/admin/api/subjects.php?c=r")
+// Get Mclass
+getMclass();
+// get Mclass function
+function getMclass() {
+  fetch("http://localhost/xampserver/drcol/admin/api/mclasses.php?c=r")
     .then(function(response) {
       return response.json();
     })
-    .then(function(subjects) {
-      populateSubjects(subjects);
+    .then(function(mclasses) {
+      populateMclass(mclasses);
     });
 }
 
-function populateSubjects(subjects) {
-  let subjectstr = "";
+function populateMclass(mclasses) {
+  let mclassestr = "";
 
-  subjects.map((subjects, i) => {
-    subjectstr += `
+  mclasses.map((mclass, i) => {
+    mclassestr += `
     <tr>
      <td>${i + 1}</td>
-     <td>${subjects.sub_name}</td>
-     <td>${subjects.sub_description}</td>
-
+     <td>${mclass.class_name}</td>
+     <td>${mclass.teacher_name}</td>
+     <td>${mclass.sub_name}</td>
+     
       <td>
           <button type="button" class="btn btn-primary">
             <i class="fa fa-eye"></i>
@@ -36,5 +37,8 @@ function populateSubjects(subjects) {
     </tr>
    `;
   });
-  $("#subjectstable").html(subjectstr);
+
+  $("#clasestable").html(mclassestr);
 }
+
+console.log("Hello")

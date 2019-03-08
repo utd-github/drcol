@@ -1,26 +1,27 @@
-// Get Subjects
-getSubjects();
-// get Subjects function
-function getSubjects() {
-  fetch("http://localhost/xampserver/drcol/admin/api/subjects.php?c=r")
+// Get Exams
+getExams();
+// get Exams function
+function getExams() {
+  fetch("http://localhost/xampserver/drcol/admin/api/exams.php?c=r")
     .then(function(response) {
       return response.json();
     })
-    .then(function(subjects) {
-      populateSubjects(subjects);
+    .then(function(exam) {
+      populateExam(exam);
     });
 }
 
-function populateSubjects(subjects) {
-  let subjectstr = "";
+function populateExam(exam) {
+  let examstr = "";
 
-  subjects.map((subjects, i) => {
-    subjectstr += `
+  exam.map((exam, i) => {
+    examstr += `
     <tr>
      <td>${i + 1}</td>
-     <td>${subjects.sub_name}</td>
-     <td>${subjects.sub_description}</td>
-
+     <td>${exam.exam_name}</td>
+     <td>${exam.description}</td>
+     <td>${exam.date}</td>
+     
       <td>
           <button type="button" class="btn btn-primary">
             <i class="fa fa-eye"></i>
@@ -36,5 +37,5 @@ function populateSubjects(subjects) {
     </tr>
    `;
   });
-  $("#subjectstable").html(subjectstr);
+  $("#examstable").html(examstr);
 }

@@ -45,7 +45,7 @@ function createclass()
             $description = $_POST["description"];
            
 
-            $stmts = $conn->prepare("INSERT INTO `class`( `class_name`, `teacher_id`, `teacher_name`, `std_id`,`std_name`, `semester `, `description`)
+            $stmts = $conn->prepare("INSERT INTO `mclass`( `class_name`, `teacher_id`, `teacher_name`, `std_id`,`std_name`, `semester `, `description`)
         VALUES (?,?,?,?,?,?,?)");
     
             $stmts->bind_param( "sssssss", $class_name, $teacher_id,$teacher_name, $std_id, $std_name, $semester,  $description);
@@ -71,7 +71,7 @@ function readclass()
         die("Conn is empty");
     }
 
-    $sql = "Select * from class";
+    $sql = "Select * from mclass";
     //Query Call
     $res = $conn->query($sql);
     //Check if Result is empty

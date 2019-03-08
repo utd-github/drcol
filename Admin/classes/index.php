@@ -10,8 +10,8 @@
                         <th>#</th>
                         <th>Class Name</th>
                         <th>Teacher Name</th>
-                        <th>Student Name</th>
-                        <th>Operations</th>
+                        <th>Subject Name</th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody id="classestable">
@@ -68,8 +68,8 @@
 
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin.min.js"></script>
+<script src="js/admin.mclass.js"></script>
 
-<script src="js/admin.classes.js"></script>
 
 </body>
 
