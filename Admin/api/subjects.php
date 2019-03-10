@@ -23,7 +23,6 @@ if (isset($_GET["c"])) {
 } else {
     echo "You need to choose the operation";
 }
-
 // Create new Subjects
 function createSubjects()
 {
@@ -38,16 +37,17 @@ function createSubjects()
 
         $stmts = $conn->prepare("INSERT INTO `subjects`( `sub_name`, `sub_description`)
                     VALUES (?,?)");
-
         $stmts->bind_param("ss", $sub_name, $sub_description);
         $res = $stmts->execute(); //get result
         $stmts->close();
 
         $user_id = mysqli_insert_id($conn);
         if ($user_id > 0) {
-            echo 1;
+            header('Content-type:Application/json');
+            echo json_encode(array("success" => true));
         } else {
-            echo 0;
+            header('Content-type:Application/json');
+            echo json_encode(array("success" => false));
         }
     } else {
         echo "Empty post params!";
@@ -72,7 +72,6 @@ function readSubjects()
         while ($row = $res->fetch_assoc()) {
             $array[] = $row;
         }
-
         header('Content-type:Application/json');
         echo json_encode($array);
     } else {

@@ -7,7 +7,7 @@
                             <a class="btn btn-primary col-2 mr-3" href="http://localhost/xampserver/drcol/admin/subjects/new.php">Add new subjects</a>
                         </div>
                         <br/>
-            <table class="table table table-hover table-stripe table-bordered" width="100%" cellspacing="0">
+            <table class="table table-hover table-stripe table-bordered" width="100%" cellspacing="0">
                 <thead class="thead-dark">
 
                     <tr>
