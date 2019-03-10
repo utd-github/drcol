@@ -4,6 +4,11 @@
         <div class="container-fluid">
 
         <div class="col-12 ">
+        <div><h6>Classes</h6></div>
+         <div class="row justify-content-end">
+                            <a class="btn btn-primary col-1 mr-3" href="http://localhost/xampserver/drcol/admin/classes/new.php">Add Class</a>
+                        </div>
+                        <br/>
             <table class="table table table-hover table-stripe table-bordered" width="100%" cellspacing="0">
                 <thead class="thead-dark">
                     <tr>
@@ -11,6 +16,7 @@
                         <th>Class Name</th>
                         <th>Teacher Name</th>
                         <th>Subject Name</th>
+                        <th>Room</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
@@ -19,7 +25,7 @@
             </table>
         </div>
         <!-- Sticky Footer -->
-        <footer class="sticky-footer">
+        <footer class="sticky-footer bg-dark text-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
                     <span>©Copyright 2019 DDR's | All Rights Reserved</span>

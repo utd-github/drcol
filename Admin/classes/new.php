@@ -6,8 +6,9 @@
           <!-- Breadcrumbs-->
           
 
-            <div class="container">
-      <div class="card">
+          <div class="container bg-dark">
+            <div class="card bg-dark text-white">
+
         <div class="card-header">Classes</div>
         <div class="card-body">
           <form>
@@ -24,9 +25,15 @@
             </div>
               
                 <div class="form-group">
-              <div class="form-row">
+                <div class="form-row">
+              <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="Tech_Id" class="form-control" placeholder="Tech_Id" required="required">
+                    <label for="Tech_Id">Teacer Id</label>
+                  </div>
+                </div>
                 
-                <div class="col-md-12">
+                <div class="col-md-6">
                   <div class="form-label-group">
                     <input type="text" id="TName" class="form-control" placeholder="TName" required="required">
                     <label for="TName">Teacher Name</label>
@@ -34,18 +41,17 @@
                 </div>
               </div>
             </div>
-              
-               <div class="form-group">
-              <div class="form-label-group">
-                <input type="text" id="Semester" class="form-control" placeholder="Semester" required="required">
-                <label for="Semester">Semester</label>
-              </div>
-            </div>
-              
+       
                    <div class="form-group">
               <div class="form-row">
+              <div class="col-md-6">
+                  <div class="form-label-group">
+                    <input type="text" id="Sub_Id" class="form-control" placeholder="Sub_Id" required="required">
+                    <label for="Sub_Id">Subject Id</label>
+                  </div>
+                </div>
                 
-                <div class="col-md-12">
+                <div class="col-md-6">
                   <div class="form-label-group">
                     <input type="text" id="SName" class="form-control" placeholder="SName" required="required">
                     <label for="SName">Subject Name</label>
@@ -53,13 +59,21 @@
                 </div>
               </div>
             </div>
-              
+            <div class="form-group">
+              <div class="form-label-group">
+                <input type="text" id="Room" class="form-control" placeholder="Room" required="required">
+                <label for="Room">Room</label>
+              </div>
+            </div>
             <div class="form-group">
                             <label for="description">Description</label>
                             <textarea class="form-control" id="description" rows="3"></textarea>
                         </div>
 
-                        <a class="btn btn-primary" href="">Register</a>
+                         <div class="row justify-content-end">
+                            <a class="btn btn-primary col-1 mr-3" href="">Submit</a>
+                            <a class="btn btn-success col-1 mr-3" href="http://localhost/xampserver/drcol/admin/classes/">Cancel</a>
+                        </div>
                   </div>
                   </div>
               </div>
@@ -74,12 +88,12 @@
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
-        <footer class="sticky-footer">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>©Copyright 2019 DDR's | All Rights Reserved</span>
+        <footer class="sticky-footer bg-dark text-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>©Copyright 2019 DDR's | All Rights Reserved</span>
+                </div>
             </div>
-          </div>
         </footer>
 
       </div>
@@ -127,9 +141,7 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
 
-    <!-- Demo scripts for this page-->
-    <script src="js/demo/datatables-demo.js"></script>
-    <script src="js/demo/chart-area-demo.js"></script>
+   
 
   </body>
 

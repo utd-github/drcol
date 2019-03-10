@@ -4,8 +4,8 @@
     <div class="container-fluid">
 
 
-        <div class="container">
-            <div class="card mt-5">
+    <div class="container bg-dark">
+            <div class="card bg-dark text-white">
                 <div class="card-header">New Subjects Form</div>
                 <div class="card-body">
 
@@ -27,8 +27,10 @@
                             <label for="description">Description</label>
                             <textarea class="form-control" id="description" rows="3"></textarea>
                         </div>
-
-                        <a class="btn btn-primary" href="">Register</a>
+                        <div class="row justify-content-end">
+                            <a class="btn btn-primary col-1 mr-3" href="">Submit</a>
+                            <a class="btn btn-success col-1 mr-3" href="http://localhost/xampserver/drcol/admin/subjects/">Cancel</a>
+                        </div>
                     </form>
 
                 </div>
@@ -39,7 +41,7 @@
         <!-- /.container-fluid -->
 
         <!-- Sticky Footer -->
-        <footer class="sticky-footer">
+        <footer class="sticky-footer bg-dark text-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
                     <span>©Copyright 2019 DDR's | All Rights Reserved</span>
@@ -92,9 +94,7 @@
 <!-- Custom scripts for all pages-->
 <script src="js/sb-admin.min.js"></script>
 
-<!-- Demo scripts for this page-->
-<script src="js/demo/datatables-demo.js"></script>
-<script src="js/demo/chart-area-demo.js"></script>
+
 
 </body>
 

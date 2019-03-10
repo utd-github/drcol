@@ -6,8 +6,9 @@
          <!-- Breadcrumbs-->
         
 
-            <div class="container">
-      <div class="card">
+         <div class="container bg-dark">
+            <div class="card bg-dark text-white">
+            
         <div class="card-header">Exams</div>
         <div class="card-body">
           <form>
@@ -47,8 +48,10 @@
                             <label for="description">Description</label>
                             <textarea class="form-control" id="description" rows="3"></textarea>
                         </div>
-
-                        <a class="btn btn-primary" href="">Register</a>
+                        <div class="row justify-content-end">
+                            <a class="btn btn-primary col-1 mr-3" href="">Submit</a>
+                            <a class="btn btn-success col-1 mr-3" href="">Cancel</a>
+                        </div>
               
           </form>
           
@@ -64,12 +67,14 @@
 
 
 <!-- Sticky Footer -->
-<footer class="sticky-footer">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>©Copyright 2019 DDR's | All Rights Reserved</span>
+
+
+<footer class="sticky-footer bg-dark text-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>©Copyright 2019 DDR's | All Rights Reserved</span>
+                </div>
             </div>
-          </div>
         </footer>
 
       </div>
@@ -117,9 +122,7 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
 
-    <!-- Demo scripts for this page-->
-    <script src="js/demo/datatables-demo.js"></script>
-    <script src="js/demo/chart-area-demo.js"></script>
+
 
   </body>
 

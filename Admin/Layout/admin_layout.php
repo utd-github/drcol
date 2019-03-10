@@ -74,82 +74,54 @@
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost/xampserver/drcol/admin/Assignments.php">
+                <a class="nav-link" href="http://localhost/xampserver/drcol/admin/assignment/">
                     <i class="fa fa-file-pdf"></i>
                     <span>Assignments</span></a>
             </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-users"></i>
-                    <span>Students</span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/students/new.php">New</a>
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/students/">All</a>
-
-            </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-sitemap"></i>
-                    <span>Classes</span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/classes/new.php">New</a>
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/classes/">All</a>
-
-            </li>
-
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fas fa-user-tie"></i>
-                    <span>Teachers</span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/teachers/new.php">New</a>
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/teachers/">All</a>
-            </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-book"></i>
-                    <span>Subjects</span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/subjects/new.php">New</a>
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/subjects/">All</a>
-            </li>
-
-
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost/xampserver/drcol/admin/events.php">
+                <a class="nav-link" href="http://localhost/xampserver/drcol/admin/events/">
                     <i class="fa fa-bullhorn"></i>
                     <span>Annoucements</span></a>
             </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="fa fa-graduation-cap"></i>
-                    <span>Exams</span>
-                </a>
-
-                <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/exams/new.php">New</a>
-                    <a class="dropdown-item" href="http://localhost/xampserver/drcol/admin/exams/">All</a>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/xampserver/drcol/admin/classes/">
+                    <i class="fa fa-sitemap"></i>
+                    <span>Classes</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost/xampserver/drcol/admin/schedule.php">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Classes Schedule</span></a>
+                <a class="nav-link" href="http://localhost/xampserver/drcol/admin/exams/">
+                    <i class="fa fa-graduation-cap"></i>
+                    <span>Exams</span></a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/xampserver/drcol/admin/students/">
+                    <i class="fas fa-users"></i>
+                    <span>Students</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/xampserver/drcol/admin/subjects/">
+                    <i class="fa fa-book"></i>
+                    <span>Subjects</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="http://localhost/xampserver/drcol/admin/teachers/">
+                    <i class="fas fa-user-tie"></i>
+                    <span>Teachers</span></a>
+
+             <li class="nav-item">
+                <a class="nav-link" href="http://localhost/xampserver/drcol/admin/schedule/index.php">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Schedule</span></a>
+            </li>
+            
 
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <i class="fas fa-fw fa-table"></i>
+                    <i class=""></i>
                     <span>Management </span></a>
             </li>
 
         </ul>
+

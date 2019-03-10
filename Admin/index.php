@@ -6,7 +6,7 @@
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="#">Dashboard</a>
+              <a href="#"><h6>Dashboard</h6></a>
             </li>
           </ol>
 
@@ -90,75 +90,34 @@
           
 
           <!-- DataTables Example -->
-          <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-table"></i>
-              Data Table Example</div>
-            <div class="card-body">
-              <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                  <thead>
-                     <tr>
-                      <th>Saturday</th>
-                      <th>Sunday</th>
-                      <th>Monday</th>
-                      <th>Tuesday</th>
-                      <th>Wednesday</th>
-                      <th>Thursday</th>
-                        <th>Friday</th>
-                    </tr>
-                  </thead>
-                  <tfoot>
-                     <tr>
-                      <th>Saturday</th>
-                      <th>Sunday</th>
-                      <th>Monday</th>
-                      <th>Tuesday</th>
-                      <th>Wednesday</th>
-                      <th>Thursday</th>
-                        <th>Friday</th>
-                    </tr>
-                  </tfoot>
-                  <tbody>
+          <div id="content-wrapper">
+              <div class="container-fluid">
+        <div class="col-12 ">
+            <table class="table table table-hover table-stripe table-bordered" width="100%" cellspacing="0">
+                <thead class="thead-dark">
                     <tr>
-                      <td>Tarbia, English</td>
-                      <td>Tarbia, English</td>
-                      <td>Tarbia, English</td>
-                      <td>Tarbia, English</td>
-                      <td>Tarbia, English</td>
-                      <td>Tarbia, English</td>
-                        <td>Free</td>
+                        <th>#</th>
+                        <th>Teacher Name</th>
+                        <th>Qualification</th>
+                        <th>Email</th>                  
+                        <th>Actions</th>
                     </tr>
-                    <tr>
-                      <td>Tarbia, English</td>
-                      <td>Tarbia, English</td>
-                      <td>Tarbia, English</td>
-                      <td>Tarbia, English</td>
-                      <td>Tarbia, English</td>
-                      <td>Tarbia, English</td>
-                        <td>Free</td>
-                    </tr>
-                  
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-          </div>
-
+                </thead>
+                <tbody id="teacherstable">
+                </tbody>
+            </table>
         </div>
-        <!-- /.container-fluid -->
+        </div>
+       
 
         <!-- Sticky Footer -->
-        <footer class="sticky-footer">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>©Copyright 2019 DDR's | All Rights Reserved</span>
+        <footer class="sticky-footer bg-dark text-white">
+            <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                    <span>©Copyright 2019 DDR's | All Rights Reserved</span>
+                </div>
             </div>
-          </div>
         </footer>
-
       </div>
       <!-- /.content-wrapper -->
 

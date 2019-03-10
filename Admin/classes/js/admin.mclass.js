@@ -21,6 +21,7 @@ function populateMclass(mclasses) {
      <td>${mclass.class_name}</td>
      <td>${mclass.teacher_name}</td>
      <td>${mclass.sub_name}</td>
+     <td>${mclass.room}</td>
      
       <td>
           <button type="button" class="btn btn-primary">
@@ -37,6 +38,7 @@ function populateMclass(mclasses) {
     </tr>
    `;
   });
+  console.log(mclassestr)
 
   $("#classestable").html(mclassestr);
 }
