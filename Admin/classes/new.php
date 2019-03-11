@@ -17,8 +17,8 @@
                
                 <div class="col-md-12">
                   <div class="form-label-group">
-                    <input type="text" id="CName" class="form-control" placeholder="CName" required="required">
-                    <label for="CName">Class Name</label>
+                    <input type="text" id="cname" class="form-control" autofocus required="required">
+                    <label for="Class Name">Class Name</label>
                   </div>
                 </div>
               </div>
@@ -28,15 +28,15 @@
                 <div class="form-row">
               <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="text" id="Tech_Id" class="form-control" placeholder="Tech_Id" required="required">
+                    <input type="text" id="tid" class="form-control"  required="required">
                     <label for="Tech_Id">Teacer Id</label>
                   </div>
                 </div>
                 
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="text" id="TName" class="form-control" placeholder="TName" required="required">
-                    <label for="TName">Teacher Name</label>
+                    <input type="text" id="tname" class="form-control"  required="required">
+                    <label for="Tname">Teacher Name</label>
                   </div>
                 </div>
               </div>
@@ -46,33 +46,34 @@
               <div class="form-row">
               <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="text" id="Sub_Id" class="form-control" placeholder="Sub_Id" required="required">
+                    <input type="text" id="subid" class="form-control"  required="required">
                     <label for="Sub_Id">Subject Id</label>
                   </div>
                 </div>
                 
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="text" id="SName" class="form-control" placeholder="SName" required="required">
-                    <label for="SName">Subject Name</label>
+                    <input type="text" id="subname" class="form-control"  required="required">
+                    <label for="Sname">Subject Name</label>
                   </div>
                 </div>
               </div>
             </div>
             <div class="form-group">
               <div class="form-label-group">
-                <input type="text" id="Room" class="form-control" placeholder="Room" required="required">
+                <input type="text" id="room" class="form-control"  required="required">
                 <label for="Room">Room</label>
               </div>
             </div>
             <div class="form-group">
-                            <label for="description">Description</label>
-                            <textarea class="form-control" id="description" rows="3"></textarea>
+                            <label for="sdes">Description</label>
+                            <textarea class="form-control" id="des" rows="3"></textarea>
                         </div>
 
                          <div class="row justify-content-end">
-                            <a class="btn btn-primary col-1 mr-3" href="">Submit</a>
-                            <a class="btn btn-success col-1 mr-3" href="http://localhost/xampserver/drcol/admin/classes/">Cancel</a>
+                         <button id="submit" class="btn btn-primary col-1 mr-3" href="">Submit</button>
+                            <button id="submitnew" class="btn btn-success col-2 mr-3" href="">Submit & New</button>
+                            <a class="btn btn-danger col-1 mr-3" href="http://localhost/xampserver/drcol/admin/classes/">Cancel</a>
                         </div>
                   </div>
                   </div>
@@ -130,17 +131,11 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Page level plugin JavaScript-->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
+    
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
-
+    <script src="js/admin.mclass.js"></script>
    
 
   </body>

@@ -108,8 +108,8 @@
                             <textarea class="form-control" id="description" rows="3"></textarea>
                         </div>
                         <div class="row justify-content-end">
-                            <a class="btn btn-primary col-1 mr-3" href="">Submit</a>
-                            <a class="btn btn-success col-1 mr-3" href="">Cancel</a>
+                        <button id="submit" class="btn btn-primary col-1 mr-3" href="">Submit</button>
+                            <button id="submitnew" class="btn btn-success col-2 mr-3" href="">Submit & New</button><a class="btn btn-danger col-1 mr-3" href="">Cancel</a>
                         </div>
 
                     </form>

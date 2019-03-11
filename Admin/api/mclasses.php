@@ -33,36 +33,41 @@ function createclass()
         die("Conn is empty");
     }
 
-    if (isset($_POST["class_name"])&& isset($_POST["teacher_id"])  && isset($_POST["teacher_name"]) && isset($_POST["std_id"]) && isset($_POST["std_name"]) 
-    && isset($_POST["semester"])  && isset($_POST["description"]) )  
+    if (isset($_POST["cname"])&& isset($_POST["tid"])  && isset($_POST["tname"]) && isset($_POST["subid"]) && isset($_POST["subname"]) 
+    && isset($_POST["room"])  && isset($_POST["des"]) )  
      {
-            $class_name = $_POST["c_name"];
-            $teacher_id = $_POST["teacher_id"];
-            $teacher_name = $_POST["t_name"];
-            $std_id = $_POST["std_id"];
-            $std_name = $_POST["std_name"];
-            $semester = $_POST["semester"];
-            $description = $_POST["description"];
+            $class_name = $_POST["cname"];
+            $teacher_id = $_POST["tid"];
+            $teacher_name = $_POST["tname"];
+            $std_id = $_POST["subid"];
+            $std_name = $_POST["subname"];
+            $semester = $_POST["room"];
+            $des = $_POST["des"];
            
 
-            $stmts = $conn->prepare("INSERT INTO `mclass`( `class_name`, `teacher_id`, `teacher_name`, `std_id`,`std_name`, `semester `, `description`)
+            $stmts = $conn->prepare("INSERT INTO `mclass`( `cname`, `tid`, `tname`, `subid`,`subname`, `room `, `des`)
         VALUES (?,?,?,?,?,?,?)");
     
-            $stmts->bind_param( "sssssss", $class_name, $teacher_id,$teacher_name, $std_id, $std_name, $semester,  $description);
+            $stmts->bind_param( "sssssss", $class_name, $teacher_id,$teacher_name, $std_id, $std_name, $semester,  $des);
             $res = $stmts->execute(); //get result
             $stmts->close();
     
             $user_id = mysqli_insert_id($conn);
             if ($user_id > 0) {
-                echo 1;
+                header('Content-type:Application/json');
+                echo json_encode(array("success" => true));
             } else {
-                echo 0;
+                header('Content-type:Application/json');
+                echo json_encode(array("success" => false));
             }
         } else {
-            echo "Empty post params!";
+            
+            header('Content-type:Application/json');
+        echo json_encode(array("success" => true), array( "error" => "empty post param"));
         }
     }
 
+// Read class
 function readclass()
 {
     require_once "dbconfig.php";

@@ -95,5 +95,3 @@ function populateSubjects(subjects) {
   });
   $("#subjectstable").html(subjectstr);
 }
-//Post request
-function submitForm(sname, sdes, c) {}

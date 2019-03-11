@@ -1,3 +1,95 @@
+// prevent form reload
+$("form").submit(function(event) {
+  event.preventDefault();
+});
+// listen fot form submit
+$("#submit").click(function() {
+  var cname = $("#cname").val();
+  var tid = $("#tid").val();
+  var tname = $("#tname").val();
+  var subid = $("#subid").val();
+  var subname = $("#subname").val();
+  var room = $("#room").val();
+  var des = $("#des").val();
+
+
+  if  (cname.trim() !== "" && tid.trim() !== "" && tname.trim() !== "" && subid.trim() !== "" && subname.trim() !== "" && room.trim() !== "" && des.trim() !== "")
+  {
+    var url = "http://localhost/xampserver/drcol/admin/api/mclasses.php?c=c";
+    var fdata = new FormData();
+    fdata.append("cname", cname);
+    fdata.append("tid", tid);
+    fdata.append("tname", tname);
+    fdata.append("subid", subid);
+    fdata.append("subname", subname);
+    fdata.append("room", room);
+    fdata.append("des", des);
+
+
+    fetch(url, {
+      method: "POST",
+      body: fdata
+    })
+      .then(response => response.text())
+      .then(res => {
+        console.log(res);
+        if (res.success == true) {
+          document.location.replace(
+            "http://localhost/xampserver/drcol/admin/classes/"
+          );
+        } else {
+          alert("Error submitting form \n", "error: ", res.error);
+        }
+      })
+      .catch(error => console.error("Fetch Error:", error));
+  } else {
+    alert("Fill all field before submitting");
+  }
+});
+$("#submitnew").click(function() {
+  var cname = $("#cname").val();
+  var tid = $("#tid").val();
+  var tname = $("#tname").val();
+  var subid = $("#subid").val();
+  var subname = $("#subname").val();
+  var room = $("#room").val();
+  var des = $("#des").val();
+
+
+  if  (cname.trim() !== "" && tid.trim() !== "" && tname.trim() !== "" && subid.trim() !== "" && subname.trim() !== "" && room.trim() !== "" && des.trim() !== "")
+  {
+    var url = "http://localhost/xampserver/drcol/admin/api/mclasses.php?c=c";
+    var fdata = new FormData();
+    fdata.append("cname", cname);
+    fdata.append("tid", tid);
+    fdata.append("tname", tname);
+    fdata.append("subid", subid);
+    fdata.append("subname", subname);
+    fdata.append("room", room);
+    fdata.append("des", des);
+  
+    fetch(url, {
+      method: "POST",
+      body: fdata
+    })
+      .then(response => response.json())
+      .then(res => {
+        console.log(res);
+        if (res.success == true) {
+          document.location.replace(
+            "http://localhost/xampserver/drcol/admin/classes/new.php"
+          );
+        } else {
+          alert("Error submitting form");
+        }
+      })
+      .catch(error => console.error("Fetch Error:", error));
+  } else {
+    alert("Fill all field before submitting");
+  }
+});
+
+
 // Get Mclass
 getMclass();
 // get Mclass function
@@ -18,9 +110,9 @@ function populateMclass(mclasses) {
     mclassestr += `
     <tr>
      <td>${i + 1}</td>
-     <td>${mclass.class_name}</td>
-     <td>${mclass.teacher_name}</td>
-     <td>${mclass.sub_name}</td>
+     <td>${mclass.cname}</td>
+     <td>${mclass.tname}</td>
+     <td>${mclass.subname}</td>
      <td>${mclass.room}</td>
      
       <td>
@@ -38,7 +130,5 @@ function populateMclass(mclasses) {
     </tr>
    `;
   });
-  console.log(mclassestr)
-
   $("#classestable").html(mclassestr);
 }
