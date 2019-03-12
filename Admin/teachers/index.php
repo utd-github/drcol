@@ -3,7 +3,7 @@
 
         <div class="container-fluid">
         <div class="col-12 ">
-        <div><h6>Students</h6></div>
+        <div><h6>Teacher</h6></div>
          <div class="row justify-content-end">
                             <a class="btn btn-primary col-2 mr-3" href="http://localhost/xampserver/drcol/admin/teachers/new.php">Add new teacher</a>
                         </div>

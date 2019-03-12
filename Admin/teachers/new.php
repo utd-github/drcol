@@ -15,8 +15,8 @@
               <div class="form-row">
                 <div class="col-md-12">
                   <div class="form-label-group">
-                    <input type="text" id="TName" class="form-control" placeholder="TName" required="required">
-                    <label for="TName">Teacher Name</label>
+                    <input type="text" id="tname" class="form-control" placeholder="tname" required="required">
+                    <label for="tname">Teacher Name</label>
                   </div>
                 </div>
               </div>
@@ -26,14 +26,14 @@
               <div class="form-row">
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="email" id="Email" class="form-control" placeholder="Email." required="required" autofocus="autofocus">
-                    <label for="Email">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="email." required="required" autofocus="autofocus">
+                    <label for="email">email</label>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="text" id="Phone" class="form-control" placeholder="Phone" required="required">
-                    <label for="Phone">Phone</label>
+                    <input type="text" id="phone" class="form-control" placeholder="phone" required="required">
+                    <label for="phone">phone</label>
                   </div>
                 </div>
               </div>
@@ -43,8 +43,8 @@
               <div class="form-row">
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="text" id="CName" class="form-control" placeholder="CName" required="required" autofocus="autofocus">
-                    <label for="CName">Subject Name</label>
+                    <input type="text" id="cname" class="form-control" placeholder="cname" required="required" autofocus="autofocus">
+                    <label for="cname">Subject Name</label>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -62,14 +62,14 @@
               <div class="form-row">
                 <div class="col-md-6">
                   <div class="form-label-group">
-                    <input type="date" id="JYear" class="form-control" placeholder="JYear" required="required" autofocus="autofocus">
-                    <label for="JYear">Joined Year</label>
+                    <input type="date" id="jyear" class="form-control" placeholder="jyear" required="required" autofocus="autofocus">
+                    <label for="jyear">Joined Year</label>
                   </div>
                 </div>
                 <div class="col-md-6"> 
                   <div class="form-label-group">
-                    <input type="date" id="HDate" class="form-control" placeholder="HDate" required="required">
-                    <label for="HDate">Hire Date</label>
+                    <input type="date" id="hdate" class="form-control" placeholder="hdate" required="required">
+                    <label for="hdate">Hire Date</label>
                   </div>
                 </div>
               </div>
@@ -77,12 +77,13 @@
             
             
                 <div class="form-group">
-                            <label for="description">Description</label>
-                            <textarea class="form-control" id="description" rows="3"></textarea>
+                            <label for="des">des</label>
+                            <textarea class="form-control" id="des" rows="3"></textarea>
                         </div>
                         <div class="row justify-content-end">
-                        <button id="submit" class="btn btn-primary col-1 mr-3" href="">Submit</button>
-                            <button id="submitnew" class="btn btn-success col-2 mr-3" href="">Submit & New</button><a class="btn btn-danger col-1 mr-3" href="http://localhost/xampserver/drcol/admin/teachers/">Cancel</a>
+                        <button id="submit" class="btn btn-primary col-1 mr-3" >Submit</button>
+                            <button id="submitnew" class="btn btn-success col-2 mr-3" >Submit & New</button>
+                            <a class="btn btn-danger col-1 mr-3" href="http://localhost/xampserver/drcol/admin/teachers/">Cancel</a>
                         </div>
               
           </form>
@@ -135,14 +136,6 @@
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Page level plugin JavaScript-->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>

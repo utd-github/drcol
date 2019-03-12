@@ -15,14 +15,14 @@
                             <div class="form-row">
                                 <div class="col-md-6">
                                     <div class="form-label-group">
-                                        <input type="text" id="FullName" class="form-control" placeholder="FullName" required="required" autofocus="autofocus">
-                                        <label for="FullName">Full Name</label>
+                                        <input type="text" id="fname" class="form-control" placeholder="fname" required="required" autofocus="autofocus">
+                                        <label for="fname">Full Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-label-group">
-                                        <input type="text" id="RollNo" class="form-control" placeholder="RollNo" required="required">
-                                        <label for="RollNo">Roll No</label>
+                                        <input type="text" id="rnum" class="form-control" placeholder="rnum" required="required">
+                                        <label for="rnum">Roll No</label>
                                     </div>
                                 </div>
                             </div>
@@ -32,8 +32,8 @@
                             <div class="form-row">
                                 <div class="col-md-12">
                                     <div class="form-label-group">
-                                        <input type="text" id="PhoneNo" class="form-control" placeholder="PhoneNo" required="required" autofocus="autofocus">
-                                        <label for="PhoneNo">Phone No</label>
+                                        <input type="text" id="phone" class="form-control" placeholder="phone" required="required">
+                                        <label for="phone">Phone No</label>
                                     </div>
                                 </div>
 
@@ -42,8 +42,8 @@
 
                         <div class="form-group">
                             <div class="form-label-group">
-                                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required">
-                                <label for="inputEmail">Email address</label>
+                                <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+                                <label for="email">Email</label>
                             </div>
                         </div>
 
@@ -51,14 +51,14 @@
                             <div class="form-row">
                                 <div class="col-md-6">
                                     <div class="form-label-group">
-                                        <input type="text" id="POB" class="form-control" placeholder="POB" required="required" autofocus="autofocus">
-                                        <label for="POB">Place Of Birth</label>
+                                        <input type="text" id="pob" class="form-control" placeholder="pob" required="required" autofocus="autofocus">
+                                        <label for="pob">Place Of Birth</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-label-group">
-                                        <input type="date" id="DOB" class="form-control" placeholder="DOB" required="required">
-                                        <label for="DOB">Date Of Birth</label>
+                                        <input type="date" id="dob" class="form-control" placeholder="dob" required="required">
+                                        <label for="dob">Date Of Birth</label>
                                     </div>
                                 </div>
                             </div>
@@ -68,14 +68,14 @@
                             <div class="form-row">
                                 <div class="col-md-6">
                                     <div class="form-label-group">
-                                        <input type="text" id="PID" class="form-control" placeholder="PID" required="required" autofocus="autofocus">
-                                        <label for="PID">parent Name</label>
+                                        <input type="text" id="pid" class="form-control" placeholder="pid" required="required" autofocus="autofocus">
+                                        <label for="pid">parent Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-label-group">
-                                        <input type="text" id="PName" class="form-control" placeholder="PName" required="required">
-                                        <label for="PName">Parent Type</label>
+                                        <input type="text" id="pname" class="form-control" placeholder="pname" required="required">
+                                        <label for="pname">Parent Type</label>
                                     </div>
                                 </div>
                             </div>
@@ -85,8 +85,8 @@
                             <div class="form-row">
                                 <div class="col-md-12">
                                     <div class="form-label-group">
-                                        <input type="text" id="Semester" class="form-control" placeholder="Semester" required="required" autofocus="autofocus">
-                                        <label for="Semester">Semester</label>
+                                        <input type="text" id="sem" class="form-control" placeholder="sem" required="required" autofocus="autofocus">
+                                        <label for="sem">semester</label>
                                     </div>
                                 </div>
 
@@ -96,20 +96,20 @@
                         <div class="form-group">
                             <div class="form-label-group">
                                 <div class="form-label-group">
-                                    <input type="date" id="Sub_date" class="form-control" placeholder="Sub_date" required="required" autofocus="autofocus">
-                                    <label for="Sub_date">Submission Date</label>
+                                    <input type="date" id="sdate" class="form-control" placeholder="sdate" required="required" autofocus="autofocus">
+                                    <label for="sdate">Submission Date</label>
                                 </div>
                             </div>
 
                         </div>
 
                         <div class="form-group">
-                            <label for="description">Description</label>
-                            <textarea class="form-control" id="description" rows="3"></textarea>
+                            <label for="des">Description</label>
+                            <textarea class="form-control" id="des" rows="3"></textarea>
                         </div>
                         <div class="row justify-content-end">
                         <button id="submit" class="btn btn-primary col-1 mr-3" href="">Submit</button>
-                            <button id="submitnew" class="btn btn-success col-2 mr-3" href="">Submit & New</button><a class="btn btn-danger col-1 mr-3" href="">Cancel</a>
+                            <button id="submitnew" class="btn btn-success col-2 mr-3" href="">Submit & New</button><a class="btn btn-danger col-1 mr-3" href="http://localhost/xampserver/drcol/admin/students/">Cancel</a>
                         </div>
 
                     </form>
