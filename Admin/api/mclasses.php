@@ -24,7 +24,6 @@ if (isset($_GET["c"])) {
     echo "You need to choose the operation";
 }
 
-
 // Create new class
 function createclass()
 {
@@ -32,40 +31,48 @@ function createclass()
     if ($conn == null) {
         die("Conn is empty");
     }
+    if (isset($_POST["cname"])
+        && isset($_POST["tid"])
+        && isset($_POST["tname"])
+        && isset($_POST["subid"])
+        && isset($_POST["subname"])
+        && isset($_POST["room"])
+        && isset($_POST["des"])) {
+        $class_name = $_POST["cname"];
+        $teacher_id = $_POST["tid"];
+        $teacher_name = $_POST["tname"];
+        $std_id = $_POST["subid"];
+        $std_name = $_POST["subname"];
+        $room = $_POST["room"];
+        $des = $_POST["des"];
 
-    if (isset($_POST["cname"])&& isset($_POST["tid"])  && isset($_POST["tname"]) && isset($_POST["subid"]) && isset($_POST["subname"]) 
-    && isset($_POST["room"])  && isset($_POST["des"]) )  
-     {
-            $class_name = $_POST["cname"];
-            $teacher_id = $_POST["tid"];
-            $teacher_name = $_POST["tname"];
-            $std_id = $_POST["subid"];
-            $std_name = $_POST["subname"];
-            $semester = $_POST["room"];
-            $des = $_POST["des"];
-           
+        $stmts = $conn->prepare("INSERT INTO `mclass`(`cname`, `tid`, `tname`, `subid`, `subname`, `room`, `description`) VALUES (?,?,?,?,?,?,?)");
+        $stmts->bind_param(
+            "sssssss",
+            $class_name,
+            $teacher_id,
+            $teacher_name,
+            $std_id,
+            $std_name,
+            $room,
+            $des);
+        $res = $stmts->execute(); //get result
+        $stmts->close();
 
-            $stmts = $conn->prepare("INSERT INTO `mclass`( `cname`, `tid`, `tname`, `subid`,`subname`, `room `, `des`)
-        VALUES (?,?,?,?,?,?,?)");
-    
-            $stmts->bind_param( "sssssss", $class_name, $teacher_id,$teacher_name, $std_id, $std_name, $semester,  $des);
-            $res = $stmts->execute(); //get result
-            $stmts->close();
-    
-            $user_id = mysqli_insert_id($conn);
-            if ($user_id > 0) {
-                header('Content-type:Application/json');
-                echo json_encode(array("success" => true));
-            } else {
-                header('Content-type:Application/json');
-                echo json_encode(array("success" => false));
-            }
-        } else {
-            
+        $user_id = mysqli_insert_id($conn);
+        if ($user_id > 0) {
             header('Content-type:Application/json');
-        echo json_encode(array("success" => true), array( "error" => "empty post param"));
+            echo json_encode(array("success" => true));
+        } else {
+            header('Content-type:Application/json');
+            echo json_encode(array("success" => false));
         }
+    } else {
+
+        header('Content-type:Application/json');
+        echo json_encode(array("success" => true), array("error" => "empty post param"));
     }
+}
 
 // Read class
 function readclass()

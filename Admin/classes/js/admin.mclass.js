@@ -11,10 +11,15 @@ $("#submit").click(function() {
   var subname = $("#subname").val();
   var room = $("#room").val();
   var des = $("#des").val();
-
-
-  if  (cname.trim() !== "" && tid.trim() !== "" && tname.trim() !== "" && subid.trim() !== "" && subname.trim() !== "" && room.trim() !== "" && des.trim() !== "")
-  {
+  if (
+    cname.trim() !== "" &&
+    tid.trim() !== "" &&
+    tname.trim() !== "" &&
+    subid.trim() !== "" &&
+    subname.trim() !== "" &&
+    room.trim() !== "" &&
+    des.trim() !== ""
+  ) {
     var url = "http://localhost/xampserver/drcol/admin/api/mclasses.php?c=c";
     var fdata = new FormData();
     fdata.append("cname", cname);
@@ -24,13 +29,11 @@ $("#submit").click(function() {
     fdata.append("subname", subname);
     fdata.append("room", room);
     fdata.append("des", des);
-
-
     fetch(url, {
       method: "POST",
       body: fdata
     })
-      .then(response => response.text())
+      .then(response => response.json())
       .then(res => {
         console.log(res);
         if (res.success == true) {
@@ -55,9 +58,15 @@ $("#submitnew").click(function() {
   var room = $("#room").val();
   var des = $("#des").val();
 
-
-  if  (cname.trim() !== "" && tid.trim() !== "" && tname.trim() !== "" && subid.trim() !== "" && subname.trim() !== "" && room.trim() !== "" && des.trim() !== "")
-  {
+  if (
+    cname.trim() !== "" &&
+    tid.trim() !== "" &&
+    tname.trim() !== "" &&
+    subid.trim() !== "" &&
+    subname.trim() !== "" &&
+    room.trim() !== "" &&
+    des.trim() !== ""
+  ) {
     var url = "http://localhost/xampserver/drcol/admin/api/mclasses.php?c=c";
     var fdata = new FormData();
     fdata.append("cname", cname);
@@ -67,7 +76,7 @@ $("#submitnew").click(function() {
     fdata.append("subname", subname);
     fdata.append("room", room);
     fdata.append("des", des);
-  
+
     fetch(url, {
       method: "POST",
       body: fdata
@@ -88,7 +97,6 @@ $("#submitnew").click(function() {
     alert("Fill all field before submitting");
   }
 });
-
 
 // Get Mclass
 getMclass();
